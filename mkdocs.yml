@@ -1,0 +1,18 @@
+site_name: Vesta
+pages:
+    - Home: index.md
+    - About: about.md
+    - Instalación: 2instalacion.md
+    - Ingreso: 3ingreso.md
+    - Bases: 4bases.md
+    - Profundizando: 5profundizando.md
+    - Entries: 6entries.md
+    - Plugin WebLogic: 7plugin_weblogic.md
+    - Plugin SOA: 8plugin_soa.md
+    - Patches: 9patches.md
+    - Auditor: 10auditor.md
+    - Notificaciones: 11notificaciones.md
+
+theme: material
+
+    
