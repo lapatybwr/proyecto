@@ -442,10 +442,13 @@
               
                 
                 
-                <h1 id="patches-opatch">Patches Opatch</h1>
-<h2 id="instalacion">Instalación</h2>
-<p>Al igual que los demás plug-ins, para instalarse ir al menú Plug-ins &gt; Install &gt; WebLogic 11g (o WebLogic 12c) &gt; Patches [OPatch] y seleccionar la ruta del jar del plugin. 
-Nota: No es necesario especificar un Oracle Home</p>
+                <h1 id="patches-opatch"><strong>Patches Opatch</strong></h1>
+<h2 id="instalacion"><strong>Instalación</strong></h2>
+<p>Al igual que los demás plug-ins, para instalarse ir al menú Plug-ins &gt; Install &gt; WebLogic 11g (o WebLogic 12c) &gt; Patches [OPatch] y seleccionar la ruta del jar del plugin. </p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>No es necesario especificar un Oracle Home</p>
+</div>
 <p><em>Click Plug-Ins &gt; Install &gt; WebLogic 12c &gt; Patches[OPatch]</em></p>
 <p><img alt="1 menu patches" src="../img/patches/1menu-patches.jpg" /></p>
 <p>En la siguiente pantalla se deberá seleccionar el plug-in a instalar, se solicitará el jar del plugin WebLogic 12cPatches.jar</p>
@@ -453,26 +456,27 @@ Nota: No es necesario especificar un Oracle Home</p>
 <p><strong><em>Browse</em></strong> Este botón permite seleccionar el archivo .zip que contiene los binarios de instalación.</p>
 <p>Al finalizar el proceso de instalación será requerido el reinicio de Vesta para la aplicación del plug-in.</p>
 <p><img alt="3 msg reinicio" src="../img/patches/3msg-reinicio.jpg" /> </p>
-<h2 id="configuracion-de-plug-on-patchesopatch">Configuracion de plug-on Patches[OPatch]</h2>
+<h2 id="configuracion-de-plug-on-patchesopatch"><strong>Configuracion de plug-on Patches[OPatch]</strong></h2>
 <p>Para obtener las entradas de configuracion relacionadas a parches de OPatch en un ambiente hay que seleccionar la opcion Configure del menú Plug-ins</p>
-<p><strong><em>Click Plug-Ins &gt; Configure</em></strong></p>
+<p><em>Click Plug-Ins &gt; Configure</em></p>
 <p><img alt="4 menú configure" src="../img/patches/4menu-configure.jpg" /></p>
 <p>En la siguiente pantalla se deberá seleccionar la “Aplicación y Ambiente” al cual estará asociado el Plug-in “Patches[OPatch]”. Es importante conocer que una misma “Aplicación y Ambiente” pueden estar asociados a múltiples plug-ins.</p>
 <p><img alt="5 sel plugin" src="../img/patches/5sel-plugin.jpg" /></p>
 <p>A continuación, será solicitado el archivo .patch para la creación de las entradas de configuración.</p>
 <p><img alt="6 archivo patch" src="../img/patches/6archivo-patch.jpg" /></p>
 <p><strong><em>Browse</em></strong> Este botón permite seleccionar un archivo con extensión .patch para realizar el import de entradas de configuración a Vesta.</p>
-<blockquote>
-<p>Nota: Para generar el archivo .patch debe ir al <ORACLE_HOME>/OPatch  en el server donde corre su instalación de WebLogic y debe correr el siguiente comando.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para generar el archivo .patch debe ir al <ORACLE_HOME>/OPatch  en el server donde corre su instalación de WebLogic y debe correr el siguiente comando:   </p>
 <p>./opatch lsinventory &gt; lsinventory.patch  (para Linux)</p>
 <p>.\opatch lsinventory &gt; lsinventory.patch (para Windows)</p>
 <p>El archivo lsinventory.patch debe descargarse al host donde corre Vesta para abrirlo en este paso de la configuración del plugin Patches[OPatch]</p>
-</blockquote>
-<h3 id="listar-entradas-patches-opatch">Listar entradas “Patches [OPatch]”</h3>
+</div>
+<h3 id="listar-entradas-patches-opatch"><strong>Listar entradas “Patches [OPatch]”</strong></h3>
 <p>Una vez seleccionado el archivo .patch serán cargadas las entradas de configuración en Vesta.</p>
 <p>Así podemos tener almacenada la configuración de los parches instalados en el Oracle Home de la instalación de WebLogic.</p>
 <p><img alt="7 listar entradas" src="../img/patches/7listar-entradas.jpg" /></p>
-<h2 id="opciones-sobre-entradas">Opciones sobre entradas</h2>
+<h2 id="opciones-sobre-entradas"><strong>Opciones sobre entradas</strong></h2>
 <p><img alt="8 opc entries" src="../img/patches/8opc-entries.jpg" /></p>
 <p>Las siguientes opciones se encuentran descritas en la sección Configuración inicial &gt; <a href="../opciones/">Opciones sobre entradas</a>&gt; </p>
 <ul>

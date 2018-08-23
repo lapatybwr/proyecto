@@ -472,10 +472,10 @@
               
                 
                 
-                <h1 id="menu-file">Menú File</h1>
+                <h1 id="menu-file"><strong>Menú File</strong></h1>
 <hr />
 <p>Dentro de la aplicación se encuentra la sección del menú File donde se tienen las funciones más importantes del sistema: Entries, Applications, Application Groups, Components, Environments, Categories, Disconnect y Exit. </p>
-<h2 id="applications">Applications</h2>
+<h2 id="applications"><strong>Applications</strong></h2>
 <hr />
 <p>Una aplicación es un conjunto de Componentes que se encuentran dentro de un grupo de aplicación. La aplicación es donde se almacenará la configuración.</p>
 <p><em>Click  File &gt; Applications</em></p>
@@ -485,7 +485,7 @@
 <p><img alt="btn mas" src="../img/profundizando/6-1btn+.jpg" /> Este botón habilita un nuevo registro en modo edición, permitiendo la captura de una nueva aplicación.</p>
 <p><img alt="btn menos" src="../img/profundizando/6-2btn-.jpg" /> Este botón elimina la aplicación seleccionada. Confirmación por parte del usuario será solicitada</p>
 <p>Una aplicación puede ser agrupada de manera lógica a través de un “Grupo de Aplicaciones”.</p>
-<h2 id="application-groups">Application Groups</h2>
+<h2 id="application-groups"><strong>Application Groups</strong></h2>
 <hr />
 <p>Un grupo de aplicaciones se usa para asignar aplicaciones a un área de la organización, por ej., la aplicación “PagosApp” y “VentasApp” se asignaría al Grupo “Finanzas”.</p>
 <p>El grupo permitirá asociar a un conjunto de aplicaciones en un subgrupo superior permitiendo mantener una estructura organizacional definida.</p>
@@ -496,21 +496,23 @@
 <p><img alt="" src="../img/profundizando/6-1btn+.jpg" /> Este botón habilita un nuevo registro en modo edición; permitiendo la captura de un nuevo grupo de aplicaciones.</p>
 <p><img alt="" src="../img/profundizando/6-2btn-.jpg" /> Este botón elimina el grupo de aplicaciones seleccionado. Confirmación por parte del usuario será solicitada.</p>
 <p>Una vez creada una aplicación, se asigna al grupo correspondiente en la columna Parent.</p>
-<h2 id="components">Components</h2>
+<h2 id="components"><strong>Components</strong></h2>
 <hr />
 <p>Un componente representa una plantilla basada en propiedades que utilizan una entrada de datos de configuración para el almacenamiento de valores. </p>
 <p><em>Click  File &gt; Components</em></p>
 <p><img alt="" src="../img/profundizando/5Components.jpg" /></p>
-<blockquote>
-<p>Nota: Un componente puede ser generado de manera manual, o provenir de un plug-in.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Un componente puede ser generado de manera manual, o provenir de un plug-in.</p>
+</div>
 <p>La siguiente ventana muestra las acciones que se podrán realizar sobre un componente.</p>
 <p><img alt="" src="../img/profundizando/6compon.jpg" /></p>
 <p><img alt="" src="../img/profundizando/6-1btn+.jpg" /> Este botón habilita un registro en modo edición, permitiendo la captura de un nuevo componente.</p>
 <p><img alt="" src="../img/profundizando/6-2btn-.jpg" /> Este botón elimina el componente seleccionado. Confirmación por parte del usuario será solicitada.</p>
-<blockquote>
-<p>Nota: Cuando un componente es eliminado, todas las entradas de configuración basados en el componente son eliminadas de manera automática.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Cuando un componente es eliminado, todas las entradas de configuración basados en el componente son eliminadas de manera automática.</p>
+</div>
 <p>Una vez creado el componente se acceder a él  para agregarle sus propiedades. La siguiente pantalla muestra cómo acceder y modificar las propiedades de un componente.</p>
 <p><em>Right Click  &gt; View Properties</em></p>
 <p><img alt="" src="../img/profundizando/7view-proper.jpg" /></p>
@@ -530,14 +532,16 @@ Protected: Define si el tipo de dato debe ser enmascarado (Password).</p>
 <p><strong>Key</strong>: Define si la propiedad será marcada como la llave primaria dentro del componente (Propiedad utilizada por el método de comparación).</p>
 </li>
 </ul>
-<blockquote>
-<p>Nota: Para guardar la propiedad editada será necesario presionar la tecla [Enter].</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para guardar la propiedad editada será necesario presionar la tecla [Enter].</p>
+</div>
 <p>La ventana propiedades del componente contiene funciones que se describen a continuación:</p>
 <p><img alt="" src="../img/profundizando/6-2btn-.jpg" /> Elimina la propiedad seleccionada. Confirmación por parte del usuario será solicitada</p>
-<blockquote>
-<p>Nota: Cuando una propiedad es eliminada todas las entradas de configuración del componente son modificadas, eliminando de manera automática los valores asociados a estas propiedades dentro de la entrada de configuración.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Cuando una propiedad es eliminada todas las entradas de configuración del componente son modificadas, eliminando de manera automática los valores asociados a estas propiedades dentro de la entrada de configuración.</p>
+</div>
 <p><img alt="arriba" src="../img/profundizando/6-2btn-.jpg" /> Permite modificar el orden de visualización de la propiedad dentro del componente, desplazando la propiedad seleccionada una posición arriba.</p>
 <p><img alt="abajo" src="../img/profundizando/8-2btn-abajo.jpg" /> Permite modificar el orden de visualización de la propiedad dentro del componente, desplazando la propiedad seleccionada una posición abajo.</p>
 <p><img alt="" src="../img/profundizando/8-3btn-aunlado.jpg" /> Permite desplazarse a la edición del componente anterior, previo a la selección de un nuevo componente a través de la opción “Componente”.</p>
@@ -547,10 +551,11 @@ Protected: Define si el tipo de dato debe ser enmascarado (Password).</p>
 <p><strong><em>Agregar un “file” como propiedad en un componente</em></strong></p>
 <p>Esta opción permite asignar el tipo “File” para una propiedad en un componente. Este tipo permite guardar archivos y obtenerlos cada vez que se requiera. Por ejemplo, si quieres guardar un reporte de Excel tendrás que elegir el “type” como “File”. De manera que cuando creas una entrada de configuración puedas guardar un documento XLS en esa propiedad.</p>
 <p><img alt="agregar file" src="../img/profundizando/10agregar-file.jpg" /></p>
-<blockquote>
-<p>Nota: El documento se genera cuando es agrega una entrada al componente.</p>
-</blockquote>
-<h2 id="environments">Environments</h2>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El documento se genera cuando es agrega una entrada al componente.</p>
+</div>
+<h2 id="environments"><strong>Environments</strong></h2>
 <hr />
 <p>Un ambiente representa un entorno de trabajo de una “Aplicación”. Toda la entrada de información que sea introducida deberá ser ingresada bajo un ambiente de trabajo para diferenciar la etapa de desarrollo que se lleva a cabo.</p>
 <p><em>Click  File &gt; Environments</em></p>
@@ -559,15 +564,17 @@ Protected: Define si el tipo de dato debe ser enmascarado (Password).</p>
 <p><img alt="" src="../img/profundizando/12ambientes.jpg" /></p>
 <p><img alt="" src="../img/profundizando/6-1btn+.jpg" /> Este botón habilita un nuevo registro en modo edición, permitiendo la captura de un nuevo ambiente.</p>
 <p><img alt="" src="../img/profundizando/6-2btn-.jpg" /> Este botón elimina el ambiente seleccionado. Confirmación por parte del usuario será solicitada.</p>
-<blockquote>
-<p>Nota: Cuando un ambiente es eliminado, todas las entradas de configuración asociados al ambiente son eliminados de manera automática.</p>
-</blockquote>
-<h2 id="categories">Categories</h2>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Cuando un ambiente es eliminado, todas las entradas de configuración asociados al ambiente son eliminados de manera automática.</p>
+</div>
+<h2 id="categories"><strong>Categories</strong></h2>
 <hr />
 <p>Una categoría tiene la función de clasificar entradas de configuración de acuerdo con la prioridad de la configuración. Agrupar varias entradas en una misma categoría facilita la búsqueda y la edición de múltiples entradas de configuración por vez.  También sirve para visualizar las propiedades con códigos de colores de manera que facilite la localización de estas.</p>
-<blockquote>
-<p>Nota: definir múltiples categorías es útil para clasificar los cambios. Un cambio de mayor importancia es identificado de manera visual a través de un color distintivo.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Definir múltiples categorías es útil para clasificar los cambios. Un cambio de mayor importancia es identificado de manera visual a través de un color distintivo.</p>
+</div>
 <p><em>Click  File &gt; Categories</em></p>
 <p><img alt="Menú categories" src="../img/profundizando/13menucat.jpg" /></p>
 <p>La siguiente pantalla muestra las diferentes categorías, donde se pueden agregar, eliminar o modificar las categorías</p>
@@ -575,22 +582,24 @@ Protected: Define si el tipo de dato debe ser enmascarado (Password).</p>
 <p>Entre las características a destacar se encuentra el color de letra que puede ser asignado a cada una de las categorías.</p>
 <p><img alt="" src="../img/profundizando/6-1btn+.jpg" /> Este botón habilita un registro en modo edición que permite la captura de una nueva categoría</p>
 <p><img alt="" src="../img/profundizando/6-2btn-.jpg" /> Este botón elimina la categoría seleccionada. Confirmación por parte del usuario será solicitada.</p>
-<blockquote>
-<p>Nota: Para guardar la categoría editada será necesario presionar la tecla [Enter]</p>
-</blockquote>
-<h2 id="disconnect">Disconnect</h2>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para guardar la categoría editada será necesario presionar la tecla [Enter]</p>
+</div>
+<h2 id="disconnect"><strong>Disconnect</strong></h2>
 <hr />
 <p>Esta opción permite “cerrar sesión” del usuario actual y se puede volver a ingresar con otro usuario sin necesidad de cerrar la aplicación.</p>
 <p><em>Click  File &gt; Disconnect</em></p>
 <p><img alt="menú disconnect" src="../img/profundizando/disconnect.jpg" /></p>
-<h2 id="exit">Exit</h2>
+<h2 id="exit"><strong>Exit</strong></h2>
 <hr />
 <p>Esta opción permite detener y salir completamente de la aplicación.</p>
 <p><em>Click  File &gt; Exit</em></p>
 <p><img alt="menpu exit" src="../img/profundizando/exit.jpg" /></p>
-<blockquote>
-<p>Nota: Al cerrar la aplicación desde el icono de “cerrar” la aplicación seguirá abierta en segundo plano.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Al cerrar la aplicación desde el icono de “cerrar” la aplicación seguirá abierta en segundo plano.</p>
+</div>
                 
                   
                 

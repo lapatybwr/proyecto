@@ -606,27 +606,28 @@
               
                 
                 
-                <h1 id="plug-ins">Plug-Ins</h1>
+                <h1 id="plug-ins"><strong>Plug-Ins</strong></h1>
 <hr />
 <p>Los plugins son componentes adicionales de Vesta que le permiten acceder a un aplicativo y descubrir u obtener automáticamente sus configuraciones.</p>
 <p><strong>VESTA</strong> cuenta con una serie de Plug-ins Oracle WebLogic 11g, y WebLogic 12c que permiten la generación automatizada de componentes, estos “Plug-ins” a su vez están encargados de recuperar las configuraciones de los servidores y almacenarlos en la aplicación en modo de “Entradas”, mismas que son asociadas a una aplicación y a un ambiente en particular.</p>
 <p>También se dispone de los Plug-ins Oracle SOA Suite 11g y 12g que permiten la administración de configuraciones de componentes principales.</p>
 <p>Es importante mencionar que se debe instalar el plugin de acuerdo con la versión de Weblogic que se tenga instalado, por ejemplo, si se cuenta con WebLogic 11g se debe de instalar su plugin de WebLogic 11g.</p>
-<h2 id="intall-weblogic-11g">Intall WebLogic 11g</h2>
+<h2 id="intall-weblogic-11g"><strong>Intall WebLogic 11g</strong></h2>
 <hr />
 <p>Se procede a la instalación de WebLogic 11g</p>
 <p><em>Click  Plug-Ins &gt; Install&gt; WebLogic 11g &gt; General.</em></p>
 <p><img alt="1 menú plugin" src="../img/weblogic/1menu-plugin.jpg" /></p>
-<blockquote>
-<p>Nota: El release 11g de WebLogic corresponden a las versiones 10.3.x de WebLogic.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El release 11g de WebLogic corresponden a las versiones 10.3.x de WebLogic.</p>
+</div>
 <p>En la siguiente pantalla se deberá seleccionar el plug-in a instalar, se solicitará una serie de archivos y directorios requeridos. Para el caso de los plug-ins de WebLogic 11g y WebLogic 12c, los siguientes datos son solicitados:</p>
 <p><img alt="2 ventana install weblogic" src="../img/weblogic/2ventana-installweblogic.jpg" /></p>
 <p><strong>Browser</strong> Este botón permite seleccionar el archivo .zip que contiene los binarios de instalación.</p>
 <p><strong>Browser</strong> Este botón permite seleccionar el directorio ORACLE_HOME de una instalación local de WebLogic 11g o WebLogic 12c respectivamente.</p>
 <p>Al finalizar el proceso de instalación, la aplicación deberá ser reiniciada.</p>
 <p><img alt="3 confirmacion para reiniciar" src="../img/weblogic/3confirmacionreiniciar.jpg" /></p>
-<h2 id="configuracion-de-plug-in-weblogic-11g">Configuración de Plug-in “WebLogic 11g”</h2>
+<h2 id="configuracion-de-plug-in-weblogic-11g"><strong>Configuración de Plug-in “WebLogic 11g”</strong></h2>
 <hr />
 <p>Una vez que el plugin se encuentra instalado en la aplicación, se procede a configurarlo.</p>
 <p><em>Click  Plug-Ins &gt; Configure</em></p>
@@ -641,27 +642,28 @@
 <p><strong><em>Password:</em></strong> Contraseña del usuario de conexión.</p>
 <p>El proceso de conexión al servidor es iniciado, en ese momento las diferentes entradas de configuración en el servidor de dominio “WebLogic” serán descubiertas.</p>
 <p><img alt="7 configuracion en proceso" src="../img/weblogic/7confenproceso.jpg" /></p>
-<h3 id="recuperacion-de-la-configuracion-weblogic">Recuperación de la configuración “WebLogic”</h3>
+<h3 id="recuperacion-de-la-configuracion-weblogic"><strong>Recuperación de la configuración “WebLogic”</strong></h3>
 <hr />
 <p>En la siguiente pantalla se deberá seleccionar las entradas de configuración a descargar desde el servidor de dominio “WebLogic 11g”.</p>
 <p><img alt="8 Config weblogic" src="../img/weblogic/8Configweblogic.jpg" /></p>
 <p><strong><em>Select All</em></strong> Este botón selecciona todas las propiedades del componente de configuración seleccionado.</p>
 <p><strong><em>Select Suggested</em></strong> Este botón selecciona las propiedades del componente de configuración sugeridas por el sistema.</p>
-<blockquote>
-<p>Nota: Las propiedades sugeridas por el sistema indican los campos necesarios para el proceso de aprovisionamiento de la configuración en el servidor de dominio “WebLogic”.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Las propiedades sugeridas por el sistema indican los campos necesarios para el proceso de aprovisionamiento de la configuración en el servidor de dominio “WebLogic”.</p>
+</div>
 <p><strong><em>Unselect All</em></strong> Este botón deselecciona todas las propiedades del componente de configuración seleccionado.</p>
 <p><strong><em>Set as layout</em></strong> Esta opción cuando está habilitada permite guardar las entradas de configuración como plantilla, de manera que para próximas importaciones de otros ambientes se pre-seleccionen las entradas de configuraciones definidas en la plantilla.</p>
 <p><strong><em>Import</em></strong> Este botón realiza la importación de las configuraciones seleccionadas desde WebLogic hacia Vesta.</p>
 <p>Una vez seleccionadas las entradas de configuración el proceso de descarga de la configuración es iniciado.</p>
 <p><img alt="9 Descarga configuración" src="../img/weblogic/9Descargaconfiguracion.jpg" /></p>
-<h3 id="listar-entradas-weblogic-11g">Listar entradas “WebLogic 11g”</h3>
+<h3 id="listar-entradas-weblogic-11g"><strong>Listar entradas “WebLogic 11g”</strong></h3>
 <p>En la siguiente pantalla se muestran las entradas de configuración provenientes de un plug-in, estas entradas son identificadas mediante iconos de color “morado”.</p>
 <p><em>Click  File &gt; Entries</em></p>
 <p><img alt="10 ventana entries" src="../img/weblogic/10ventanaentries.jpg" /></p>
-<h3 id="opciones-sobre-entradas-en-plugins">Opciones sobre entradas en plugins</h3>
+<h3 id="opciones-sobre-entradas-en-plugins"><strong>Opciones sobre entradas en plugins</strong></h3>
 <p>Una vez que han sido definidas las entradas de plugins, se cuenta con una serie de opciones a realizar sobre ellas, estas opciones se encuentran en el menú emergente sobre la entrada seleccionada. </p>
-<h3 id="opciones-generales">Opciones generales</h3>
+<h3 id="opciones-generales"><strong>Opciones generales</strong></h3>
 <p>Las siguientes opciones se encuentran descritas en la sección Configuración inicial &gt; <a href="../opciones/">Opciones sobre entradas</a></p>
 <ul>
 <li>Acquiere control</li>
@@ -677,18 +679,19 @@
 <li>Copy property</li>
 <li>Compare</li>
 </ul>
-<h4 id="migrate-to">Migrate to</h4>
+<h4 id="migrate-to"><strong>Migrate to</strong></h4>
 <p>Esta opción permite migrar una configuración de 11g a una configuración de 12c.</p>
 <p><em>Right click  entry &gt; Migrate to &gt; Version to migrate</em></p>
 <p><img alt="19 version to migrate" src="../img/weblogic/19versiontomigrate.jpg" /></p>
-<h4 id="push-to-server-individual">Push to Server (Individual)</h4>
+<h4 id="push-to-server-individual"><strong>Push to Server (Individual)</strong></h4>
 <p>Esta opción permite enviar la entrada de configuración seleccionada hacia el servidor de dominio “WebLogic” destino. 
 Nota: Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
 <p><em>Right Click  &gt; Push to Server</em></p>
 <p><img alt="20 menu push to server" src="../img/weblogic/20menupushtosever.jpg" /></p>
-<blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
 <p>Confirmación es requerida</p>
-</blockquote>
+</div>
 <p><img alt="21 ventana push to server" src="../img/weblogic/21ventanapush.jpg" /></p>
 <p><strong>Start</strong> Al presionar este botón el proceso de aprovisionamiento de la configuración es iniciado.</p>
 <p><strong>Close</strong> Este botón es habilitado una vez finaliza el proceso de aprovisionamiento de la configuración.</p>
@@ -696,13 +699,13 @@ Nota: Esta opción solo está disponible para “entradas de configuración” a
 <p>Cuando una configuración no pudo ser aprovisionada en el servidor de dominio “WebLogic” manda la siguiente pantalla indicando el inconveniente:</p>
 <p><img alt="23 push to server" src="../img/weblogic/23pushtoserver.jpg" /></p>
 <p><strong>RollBack</strong> Este botón es habilitado cuando una configuración no pudo ser aprovisionada en el servidor de dominio “WebLogic” permitiendo así deshacer los cambios en conflicto.</p>
-<h4 id="resolver-conflictos">Resolver conflictos</h4>
+<h4 id="resolver-conflictos"><strong>Resolver conflictos</strong></h4>
 <p>Esta opción permite resolver conflictos de sincronización entre la configuración almacenada en Vesta y la configuración en el servidor “WebLogic”. Esta opción es útil cuando el envío de la configuración realizada hacia el servidor de dominio “WebLogic” no pudo comprobarse de manera automática por el sistema. Garantizando que la configuración almacenada en Vesta y la configuración del servidor de dominio “WebLogic” es concisa.</p>
-<blockquote>
-<p>Notas: </p>
-<p>Validación manual por parte del usuario dentro del servidor de dominio “WebLogic” es necesaria.</p>
-<p>Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
-</blockquote>
+<div class="admonition notas">
+<p class="admonition-title">Notas</p>
+<p>Validación manual por parte del usuario dentro del servidor de dominio “WebLogic” es necesaria.
+Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
+</div>
 <p><em>Right Click &gt; Resolve Conflicts</em></p>
 <p><img alt="24 menu resolve conflicts" src="../img/weblogic/24menuresolveconflicts.jpg" /></p>
 <p>Al ingresar a “Resolver Conflicts”, muestra en pantalla un mensaje preguntando si está seguro de realizar dicha acción.</p>
@@ -713,7 +716,7 @@ Nota: Esta opción solo está disponible para “entradas de configuración” a
 <p><img alt="26 resolviendo conflictos" src="../img/weblogic/26resolviendoconflictos.jpg" /></p>
 <p>Al termino, muestra el mensaje de que se resolvió el conflicto.</p>
 <p><img alt="27 conflicto resuelto" src="../img/weblogic/27conflictoresuelto.jpg" /></p>
-<h4 id="down-from-server">Down from Server</h4>
+<h4 id="down-from-server"><strong>Down from Server</strong></h4>
 <p>Esta opción permite descargar los cambios de configuración desde el servidor de dominio “WebLogic” hacia la entrada de configuración seleccionada dentro de la aplicación. </p>
 <blockquote>
 <p>Nota: Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
@@ -724,24 +727,26 @@ Nota: Esta opción solo está disponible para “entradas de configuración” a
 <p><img alt="29 ventana down server" src="../img/weblogic/29ventanadownserver.jpg" /></p>
 <p><img alt="30 punto" src="../img/weblogic/30punto.jpg" /> Esta opción permite aceptar el cambio pendiente desde el servidor de dominio “WebLogic”.</p>
 <p><img alt="31 sel categoria" src="../img/weblogic/31selcategoria.jpg" /> Esta opción permite la selección de categoría. Es útil cuando se desea identificar un cambio de alta prioridad de manera visual.</p>
-<blockquote>
-<p>Nota: El historial de cambios sobre las entradas de configuración descargadas será actualizado de manera automática.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El historial de cambios sobre las entradas de configuración descargadas será actualizado de manera automática.</p>
+</div>
 <p>La siguiente pantalla muestra el resumen de cambios descargados desde el servidor de dominio “WebLogic” hacia VESTA. Los enlaces situados en la parte superior del cambio permiten la navegación a la entrada de configuración modificada.</p>
 <p><img alt="32 resumen de cambios" src="../img/weblogic/32resumencambios.jpg" /></p>
 <p>Al presionar los enlaces situados en la parte superior de la entrada de configuración se mostrará la pantalla “visualización de entradas”.</p>
 <p>La siguiente pantalla permite visualizar las entradas de configuración descargadas desde el servidor de dominio “WebLogic”.</p>
 <p><img alt="33 entries de config descargadas" src="../img/weblogic/33entriesconfigcargadas.jpg" /></p>
-<h4 id="restore-default-values">Restore default values</h4>
+<h4 id="restore-default-values"><strong>Restore default values</strong></h4>
 <p>Esta opción establece los valores por default de toda la entrada de configuración, los valores por default son los establecidos por el fabricante del application server.</p>
 <p><em>Right click entry &gt; Restore default values</em></p>
 <p><img alt="34 menu restore" src="../img/weblogic/34restore.jpg" /></p>
 <h2 id="sincronizacion-de-plug-in-weblogic">Sincronización de Plug-in “WebLogic”</h2>
 <hr />
 <p>El proceso de sincronización es el método mediante el cual las diferentes entradas de configuración almacenadas en VESTA y las configuraciones en el servidor de dominio “WebLogic” son sincronizadas.</p>
-<blockquote>
-<p>Nota: Esta opción es útil cuando se desea sincronizar más de una entrada de configuración entre el servidor de dominio “WebLogic” y Vesta.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea sincronizar más de una entrada de configuración entre el servidor de dominio “WebLogic” y Vesta.</p>
+</div>
 <p><em>Click Plug-Ins &gt; Synchronize</em></p>
 <p><img alt="35 menu syncrinize" src="../img/weblogic/35sincrinice.jpg" /></p>
 <p>Al ingresar a la opción de sincronización, muestra la siguiente ventana:</p>
@@ -749,22 +754,24 @@ Nota: Esta opción solo está disponible para “entradas de configuración” a
 <p><img alt="37 btn paloma" src="../img/weblogic/37btnpaloma.jpg" /> Esta opción selecciona la aplicación y ambiente a sincronizar.</p>
 <p><strong>Push to Server</strong> Al presionar este botón las entradas de configuración almacenados en Vesta son enviadas hacia el servidor de dominio “WebLogic”.</p>
 <p><strong>Down from Server</strong> Al presionar este botón las entradas de configuración almacenados en el servidor de dominio “WebLogic” son descargados hacia Vesta.</p>
-<h2 id="push-to-server">Push to server</h2>
+<h2 id="push-to-server"><strong>Push to server</strong></h2>
 <p>Esta opción permite enviar de manera selectiva un conjunto de configuraciones almacenadas en Vesta hacia el servidor de dominio “WebLogic”.</p>
 <p><img alt="38 pantalla push to server" src="../img/weblogic/38pantallapushtoserver.jpg" /></p>
-<blockquote>
-<p>Nota: Esta opción es útil cuando se desea enviar un conjunto de configuraciones de manera global.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea enviar un conjunto de configuraciones de manera global.</p>
+</div>
 <p><strong>Start</strong> Al presionar este botón el proceso de aprovisionamiento de la configuración es iniciado.</p>
 <p><strong>Close</strong> Este botón es habilitado una vez finaliza el proceso de aprovisionamiento de la configuración.</p>
 <p><img alt="39 btn cmd" src="../img/weblogic/39btncmd.jpg" />Esta opción permite la visualización del archivo log generado durante el proceso de aprovisionamiento de la configuración.</p>
 <p><img alt="40 ventana cmd" src="../img/weblogic/40ventanacmd.jpg" /></p>
-<h3 id="down-from-server_1">Down from server</h3>
+<h3 id="down-from-server_1"><strong>Down from server</strong></h3>
 <p>Esta opción permite descargar de manera selectiva un conjunto de configuraciones desde el servidor de dominio “WebLogic” hacia Vesta.</p>
 <p><img alt="41 down from server" src="../img/weblogic/41downfromserver.jpg" /></p>
-<blockquote>
-<p>Nota: Esta opción es útil cuando se desea descargar un conjunto de configuraciones de manera global. </p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea descargar un conjunto de configuraciones de manera global. </p>
+</div>
 <p><img alt="37 btn paloma" src="../img/weblogic/37btnpaloma.jpg" /> Esta opción permite aceptar el cambio pendiente desde el servidor de dominio “WebLogic”.</p>
 <p><img alt="31 sel categoria" src="../img/weblogic/31selcategoria.jpg" /> Esta opción permite la selección de categoría. Esta opción es útil cuando se desea identificar un cambio de alta prioridad de manera visual.</p>
 <p>La siguiente pantalla muestra el resumen de cambios descargados desde el servidor de dominio “WebLogic” hacia Vesta. Los enlaces situados en la parte superior del cambio permiten la navegación a la entrada de configuración modificado.</p>

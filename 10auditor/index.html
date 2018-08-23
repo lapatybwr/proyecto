@@ -456,10 +456,10 @@
               
                 
                 
-                <h1 id="auditor">Auditor</h1>
+                <h1 id="auditor"><strong>Auditor</strong></h1>
 <hr />
 <p>El auditor es la funcionalidad complementaria de los plug-ins de WebLogic 11g y 12c. Dicha funcionalidad es para detectar modificaciones en los ambientes administrados por Vesta , de manera que cuando haya una modificación en alguna configuración de WebLogic ésta sea detectada por Vesta e informe al usuario de dicha actividad en los ambientes.</p>
-<h2 id="instalacion">Instalación</h2>
+<h2 id="instalacion"><strong>Instalación</strong></h2>
 <hr />
 <p>Para la instalación se requiere:</p>
 <ul>
@@ -467,47 +467,51 @@
 <li>Acceso a la consola de WebLogic </li>
 <li>Acceso al sistema operativo donde está instalado WebLogic</li>
 </ul>
-<h2 id="auditoria-de-cambios">Auditoria de cambios</h2>
+<h2 id="auditoria-de-cambios"><strong>Auditoria de cambios</strong></h2>
 <hr />
 <p>Para instalar el auditor, tienes que iniciar sesión en la consola de WebLogic donde será instalado.
 En esta pantalla se deberá seleccionar mediante la opción “Configuration Audit Mode” el modo de auditoria “Audit Changes” </p>
 <p><em>Click domain name &gt; Configuration &gt; General &gt; Advance</em></p>
 <p><img alt="consola" src="../img/auditor/1consola.jpg" /></p>
-<blockquote>
-<p>Nota: El servidor de dominio “Admin Server” será apagado y encendido según se indique en este documento.</p>
-</blockquote>
+<p>!! Nota
+    El servidor de dominio “Admin Server” será apagado y encendido según se indique en este documento.</p>
 <p>La opción “Change Audit” deberá ser seleccionada.</p>
 <p>Posteriormente se selecciona la opción “Save” y de ser necesario “Activate changes”</p>
 <p><img alt="2 config auditor" src="../img/auditor/2configauditor.jpg" /></p>
-<blockquote>
-<p>Nota: Para modificar el valor es necesario obtener el lock de la consola en la opción “Lock &amp; Edit” ubicada en la parte superior izquierda en la sección Change Center, solo aplica a dominios instalados en modo Production.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para modificar el valor es necesario obtener el lock de la consola en la opción “Lock &amp; Edit” ubicada en la parte superior izquierda en la sección Change Center, solo aplica a dominios instalados en modo Production.</p>
+</div>
 <p><strong>Apagar AdminServer</strong></p>
 <p>Luego de establecer el valor se procede a apagar el AdminServer</p>
 <p>Una vez apagado el Admin Server el archivo “CustomAuditor.jar” deberá ser copiado a la ubicación de domino “MBeans” ubicado en la siguiente ruta:
 <WL_HOME>\server\lib\mbeantypes</p>
-<blockquote>
-<p>Nota: Durante el proceso de copiado de “Custom Auditor” el servidor de dominio “Admin Server” deberá estar apagado </p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Durante el proceso de copiado de “Custom Auditor” el servidor de dominio “Admin Server” deberá estar apagado </p>
+</div>
 <p>Por ejemplo:
 <strong>D:\Middleware_SOA\Oracle_Home\wlserver\server\lib\mbeantypes</strong></p>
 <p><img alt="3 ruta" src="../img/auditor/3ruta.jpg" /></p>
 <p>Se procede a levantar el servidor Admin Server</p>
-<blockquote>
-<p>Nota: Una vez finalizado el proceso de copiado de “Custom Auditor” el servidor de domino “Admin Server” deberá ser encendido </p>
-</blockquote>
-<h2 id="publicacion">Publicación</h2>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Una vez finalizado el proceso de copiado de “Custom Auditor” el servidor de domino “Admin Server” deberá ser encendido </p>
+</div>
+<h2 id="publicacion"><strong>Publicación</strong></h2>
 <hr />
 <p>En la siguiente pantalla se deberá crear un nuevo proveedor de auditoria previendo la siguiente información </p>
-<blockquote>
-<p>Nota: Si durante el proceso de publicación un mensaje de “validación de esquemas” es mostrado los servidores de dominio “Admin Server y Managed Servers” deberán ser reiniciados </p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Si durante el proceso de publicación un mensaje de “validación de esquemas” es mostrado los servidores de dominio “Admin Server y Managed Servers” deberán ser reiniciados </p>
+</div>
 <p><em>Domain name &gt; click Security Realms &gt; Click myrealm</em></p>
 <p><img alt="4 myrealm" src="../img/auditor/4myrealm.jpg" /></p>
 <p><em>Providers  &gt; Auditing &gt; Click New</em></p>
-<blockquote>
-<p>Nota: Para modificar el valor es necesario obtener el lock de la consola en la opción “Lock &amp; Edit” ubicada en la parte superior izquierda en la sección Change Center, solo aplica a dominios instalados en modo Production.</p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para modificar el valor es necesario obtener el lock de la consola en la opción “Lock &amp; Edit” ubicada en la parte superior izquierda en la sección Change Center, solo aplica a dominios instalados en modo Production.</p>
+</div>
 <p><img alt="5 new auditor" src="../img/auditor/5new-auditor.jpg" /></p>
 <ul>
 <li>
@@ -521,7 +525,7 @@ En esta pantalla se deberá seleccionar mediante la opción “Configuration Aud
 </li>
 </ul>
 <p><img alt="6 creara nuevo" src="../img/auditor/6creara-nuevo.jpg" /></p>
-<p>Click Auditor name </p>
+<p><em>Click Auditor name</em></p>
 <p><img alt="7 clic name" src="../img/auditor/7clic-name.jpg" /></p>
 <p><em>Configuration &gt; Click Provider Specific</em></p>
 <p><img alt="8 provide specif" src="../img/auditor/8provide-specif.jpg" /></p>
@@ -529,10 +533,11 @@ En esta pantalla se deberá seleccionar mediante la opción “Configuration Aud
 <p>Active Context Handler Entries : ALL </p>
 <p><img alt="9 enable" src="../img/auditor/9enable.jpg" /></p>
 <p>Posteriormente se selecciona la opción “Save” y de ser necesario “Activate changes” </p>
-<blockquote>
-<p>Nota: Una vez finalizado el proceso de publicación el servidor de dominio “Admin Server” y los servidores de dominio “Managed Servers” deberán ser apagados </p>
-</blockquote>
-<h2 id="configuracion-admin-server">Configuración Admin Server</h2>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Una vez finalizado el proceso de publicación el servidor de dominio “Admin Server” y los servidores de dominio “Managed Servers” deberán ser apagados </p>
+</div>
+<h2 id="configuracion-admin-server"><strong>Configuración Admin Server</strong></h2>
 <p>Para que WebLogic informe a Vesta los cambios que ocurren en el ambiente es necesario modificar los parámetros de inicio del servidor de dominio “Admin Server” esto es editando el script “startWebLogic.sh” o “startWebLogic.cmd” ya sea Linux o Windows el sistema operativo donde corre WebLogic.</p>
 <p>-Dvesta.server= IP de servidor de dominio principal en VESTA </p>
 <p>-Dvesta.port= Puerto de servidor de dominio principal en VESTA default (7890) </p>
@@ -545,13 +550,14 @@ En esta pantalla se deberá seleccionar mediante la opción “Configuration Aud
 <blockquote>
 <p>Nota: Una vez finalizado el proceso de configuración el servidor de dominio “Admin Server” deberá ser reiniciado para que los cambios al script hagan efecto. </p>
 </blockquote>
-<h3 id="configuracion-managed-server">Configuracion managed server</h3>
+<h3 id="configuracion-managed-server"><strong>Configuracion managed server</strong></h3>
 <p>En este paso los parámetros de inicio de los servidores de dominio “Managed Servers” deberán ser modificados </p>
 <p><em>Click domain name &gt; Servers &gt; Server name &gt; Configuration&gt; Server start &gt; Arguments</em></p>
 <p><img alt="11 argumentos" src="../img/auditor/11argumentos.jpg" /></p>
-<blockquote>
-<p>Nota: Una vez finalizado el proceso de configuración los servidores de dominio “Managed Servers” deberán ser reiniciados. </p>
-</blockquote>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Una vez finalizado el proceso de configuración los servidores de dominio “Managed Servers” deberán ser reiniciados. </p>
+</div>
                 
                   
                 
