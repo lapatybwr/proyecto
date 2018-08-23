@@ -1,7 +1,7 @@
 site_name: Vesta
 pages:
     - Home: index.md
-    - About: about.md
+    - Requisitos: about.md
     - Instalación: 2instalacion.md
     - Ingreso: 3ingreso.md
     - Bases: 4bases.md
@@ -12,7 +12,9 @@ pages:
     - Patches: 9patches.md
     - Auditor: 10auditor.md
     - Notificaciones: 11notificaciones.md
+    - Glosario: glosario.md
 
 theme: material
-
     
+markdown_extensions: 
+    - admonition    
