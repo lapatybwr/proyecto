@@ -1,7 +1,7 @@
 site_name: Vesta
 pages:
     - Inicio: index.md
-    - Conceptos: conceptos.md
+    - Conceptos: about.md
     - Instalación: 2instalacion.md
     - Ingreso: 3ingreso.md
     - Funciones básicas: 4funciones.md
