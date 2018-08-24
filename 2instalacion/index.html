@@ -180,8 +180,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../about/" title="Requisitos" class="md-nav__link">
-      Requisitos
+    <a href="../conceptos/" title="Conceptos" class="md-nav__link">
+      Conceptos
     </a>
   </li>
 
@@ -217,6 +217,40 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-del-sistema" title="Requisitos del Sistema" class="md-nav__link">
+    Requisitos del Sistema
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generales" title="Generales" class="md-nav__link">
+    Generales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-operativo" title="Sistema Operativo" class="md-nav__link">
+    Sistema Operativo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-de-datos" title="Base de Datos" class="md-nav__link">
+    Base de Datos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#instalacion" title="Instalación" class="md-nav__link">
@@ -330,7 +364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../4bases/" title="Funciones básicas" class="md-nav__link">
+    <a href="../4funciones/" title="Funciones básicas" class="md-nav__link">
       Funciones básicas
     </a>
   </li>
@@ -342,7 +376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../5profundizando/" title="Implementando" class="md-nav__link">
+    <a href="../5implementando/" title="Implementando" class="md-nav__link">
       Implementando
     </a>
   </li>
@@ -420,18 +454,6 @@
   </li>
 
     
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../conceptos/" title="Conceptos" class="md-nav__link">
-      Conceptos
-    </a>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
@@ -451,6 +473,40 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-del-sistema" title="Requisitos del Sistema" class="md-nav__link">
+    Requisitos del Sistema
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generales" title="Generales" class="md-nav__link">
+    Generales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-operativo" title="Sistema Operativo" class="md-nav__link">
+    Sistema Operativo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-de-datos" title="Base de Datos" class="md-nav__link">
+    Base de Datos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#instalacion" title="Instalación" class="md-nav__link">
@@ -553,7 +609,58 @@
                 
                 
                 <h1 id="instalacion-de-vesta">Instalación de Vesta</h1>
-<p>Para que Vesta pueda funcionar correctamente en el equipo, es necesario consultar previamente los <a href="../about/"><strong>requisitos</strong></a> que debe cumplir el sistema.</p>
+<p>Para que Vesta pueda funcionar correctamente en el equipo, es necesario consultar previamente los requisitos que debe cumplir el sistema.</p>
+<h2 id="requisitos-del-sistema"><strong>Requisitos del Sistema</strong></h2>
+<hr />
+<p>Disponer de un equipo de cómputo para la instalación del producto considerando como mínimo las siguientes características:</p>
+<h3 id="generales"><strong>Generales</strong></h3>
+<hr />
+<ul>
+<li>
+<p>Contar con una licencia para la instalación de Vesta, visite la página oficial para obtener para obtener la aplicación.</p>
+</li>
+<li>
+<p>Disponer de los instaladores de Vesta, provenientes de la página oficial.</p>
+</li>
+</ul>
+<p><img src="/img/instalacion/ves-chica.jpg" alt="Drawing" style="width: 200px;"/></p>
+<h3 id="sistema-operativo"><strong>Sistema Operativo</strong></h3>
+<hr />
+<ul>
+<li>Microsoft Windows: como mínimo Windows XP en adelante o cualquier versión de Linux </li>
+<li>Memoria RAM: 8 GB</li>
+<li>Procesador: Dual core 2 Ghz</li>
+<li>Espacio en disco duro: 350 Mb de la aplicación.</li>
+<li>Oracle JDK y JRE 1.8+  (no compatible con 9 o 10) o bien Oracle Linux 5.0 +, depende del Sistema Operativo con el que se disponga.</li>
+<li>Winrar</li>
+</ul>
+<p><img alt="" src="../img/instalacion/linux-windows-hosting.png" /></p>
+<h3 id="base-de-datos"><strong>Base de Datos</strong></h3>
+<hr />
+<ul>
+<li>
+<p>Versión</p>
+<ul>
+<li>Oracle DataBase 11g (Standalone o RAC)</li>
+<li>Oracle DataBase 12c(Standalone o RAC)   Real aplication cluster.<pre><code>   En caso de ser RAC se deberá disponer del componente SCAN
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Espacio: 10 GB</p>
+</li>
+<li>Character Set : AL32UTF8</li>
+<li>SHARED_POOL_SIZE : 147,456 KB</li>
+<li>SGA_MAX_SIZE : 147,456 KB</li>
+<li>DB_BLOCK_SIZE : 8 KB</li>
+<li>session_cached_cursors : 100</li>
+<li>processes : 500</li>
+<li>open_cursors : 800</li>
+<li>db_files : 600</li>
+<li>Usuario: Se deberá disponer de un usuario con permisos de creación de objetos sobre la base de datos.</li>
+</ul>
+<p><img alt="" src="../img/instalacion/oracle_database1.jpg" /></p>
 <h2 id="instalacion">Instalación</h2>
 <hr />
 <p>Una vez que se han cumplido los requisitos previos a la instalación del producto, se procede con la instalación.</p>
@@ -648,7 +755,7 @@ La base de datos contendrá el repositorio de metadatos de la aplicación. Los d
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../about/" title="Requisitos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../conceptos/" title="Conceptos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -657,7 +764,7 @@ La base de datos contendrá el repositorio de metadatos de la aplicación. Los d
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Requisitos
+                Conceptos
               </span>
             </div>
           </a>
