@@ -1,18 +1,18 @@
 site_name: Vesta
 pages:
-    - Home: index.md
-    - Requisitos: about.md
+    - Inicio: index.md
+    - Conceptos: conceptos.md
     - Instalación: 2instalacion.md
     - Ingreso: 3ingreso.md
-    - Bases: 4bases.md
-    - Profundizando: 5profundizando.md
+    - Funciones básicas: 4funciones.md
+    - Implementando: 5implementando.md
     - Entries: 6entries.md
-    - Plugin WebLogic: 7plugin_weblogic.md
+    - Plugins: 7plugin_weblogic.md
     - Plugin SOA: 8plugin_soa.md
     - Patches: 9patches.md
     - Auditor: 10auditor.md
     - Notificaciones: 11notificaciones.md
-    - Glosario: glosario.md
+    
 
 theme: material
     
