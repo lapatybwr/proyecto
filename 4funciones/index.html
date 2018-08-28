@@ -323,6 +323,33 @@
     System Parameters
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-parameters" title="Password Parameters" class="md-nav__link">
+    Password Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-rules" title="Password rules" class="md-nav__link">
+    Password rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-parameters-and-visual-parameters" title="General parameters and visual parameters" class="md-nav__link">
+    General parameters and visual parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -553,6 +580,33 @@
     System Parameters
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-parameters" title="Password Parameters" class="md-nav__link">
+    Password Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-rules" title="Password rules" class="md-nav__link">
+    Password rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-parameters-and-visual-parameters" title="General parameters and visual parameters" class="md-nav__link">
+    General parameters and visual parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -606,8 +660,23 @@
                 
                 <h1 id="elementos-de-la-aplicacion"><strong>Elementos de la aplicación</strong></h1>
 <hr />
-<p>Vesta se encuentra distribuido en cuatro menús: File, Plugs-Ins, Administration y Users, cada menú con funciones específicas que se describirán de acuerdo con la prioridad de uso.</p>
-<p><img alt="" src="../img/bases/1menu.jpg" /></p>
+<p>Vesta se encuentra distribuido en cuatro menús: </p>
+<ol>
+<li>
+<p><a href="../5implementando/">File</a></p>
+</li>
+<li>
+<p><a href="../7plugin_weblogic/">Plugs-Ins</a></p>
+</li>
+<li>
+<p><a href="#menu-administration">Administration</a></p>
+</li>
+<li>
+<p><a href="#menu-users">Users</a></p>
+</li>
+</ol>
+<p>Cada menú cuenta con funciones específicas que se describirán de acuerdo con la prioridad de uso.</p>
+<p><img alt="Menús" src="../img/bases/1menu.jpg" /></p>
 <h2 id="menu-users"><strong>Menú Users</strong></h2>
 <hr />
 <p>En este menú se encuentran las configuraciones básicas sobre los usuarios.</p>
@@ -626,7 +695,7 @@
 <p><img alt="" src="../img/bases/4crear.jpg" /></p>
 <ul>
 <li>Login: Es el usuario de acceso al sistema</li>
-<li>Password: Contraseña de acceso al sistema. Esta contraseña deberá cumplir con los criterios de seguridad establecidos por la aplicación, pero se debe tener en cuenta que será cambiada al ingresar al sistema.</li>
+<li>Password: Contraseña de acceso al sistema. Esta contraseña deberá cumplir con las <a href="#password-rules"><strong>reglas</strong></a> de seguridad establecidas por la aplicación, pero se debe tener en cuenta que será cambiada al ingresar al sistema.</li>
 <li>Confirm password: volvemos a ingresar la contraseña.</li>
 <li>Profile: Define el perfil y con ello los permisos de acceso</li>
 <li>Name: Nombre descriptivo del usuario dentro del sistema.</li>
@@ -640,14 +709,14 @@
 </div>
 <h3 id="users"><strong>Users</strong></h3>
 <hr />
-<p>En esta opción se muestran los usuarios de la aplicación y los que se hayan creado posteriormente.</p>
+<p>En esta opción se muestran los usuarios de la aplicación creados automáticamente y los que se hayan creado manualmente.</p>
 <p><em>Click  Users &gt; Users</em></p>
 <p><img alt="" src="../img/bases/5opcusers.jpg" /></p>
-<p>La siguiente pantalla permite visualizar los usuarios definidos dentro de la aplicación. Por default ya se encuentran definidos dos usuarios en el sistema, el usuario admin con todos los permisos y el usuario monitor limitado de permisos.  Si se crean otros usuarios, estos deben mostrarse en la ventana:</p>
+<p>La siguiente pantalla permite visualizar los usuarios definidos dentro de la aplicación. El usuario admin cuenta con todos los permisos y el usuario monitor se encuentra limitado de permisos.  Si se crean mas usuarios, estos deben mostrarse en la ventana:</p>
 <p><img alt="" src="../img/bases/6edituser.jpg" /></p>
 <div class="admonition nota">
 <p class="admonition-title">Nota</p>
-<p>Usuarios con el permiso “Edit User”, podrán modificar el password de otro usuario</p>
+<p>Usuarios con el permiso “Edit User”, podrán modificar el password y el perfil de otro usuario.</p>
 </div>
 <h3 id="profiles"><strong>Profiles</strong></h3>
 <hr />
@@ -706,16 +775,16 @@ Esta opción permite definir criterios de búsqueda específicos que agilicen la
 <p>En esta opción se pueden manipular los parámetros de configuración de las contraseñas y definir cada cuanto tiempo se actualizará la información en la ventana de las entradas. </p>
 <p><em>Click  administracion &gt; system parameters</em></p>
 <p>La siguiente pantalla permite visualizar y modificar los parámetros de sistema.</p>
-<p><img alt="" src="../img/bases/admin/7param.jpg" /></p>
-<p><strong><em> Password Parameters </em></strong></p>
+<p><img alt="" src="/img/bases/admin/visual-parameters.jpg" /></p>
+<h4 id="password-parameters">Password Parameters</h4>
 <p>Donde se establecen las configuraciones de password tales como notificaciones de expiración, días de password válido y numero de passwords que no podrán ser repetidos.</p>
-<p><img alt="" src="../img/bases/admin/8pwd-param.jpg" /></p>
-<p><strong><em> Password rules </em></strong></p>
+<p><img alt="" src="/img/bases/admin/8password-paramerts.jpg" /></p>
+<h4 id="password-rules">Password rules</h4>
 <p>Establezca reglas de validación para establecer nuevos passwords como la longitud, mayúsculas, números y caracteres espaciales.</p>
-<p><img alt="" src="../img/bases/admin/9pwd-rules.jpg" /></p>
-<p><strong><em> General parameters and visual parameters </em></strong></p>
+<p><img alt="" src="/img/bases/admin/9password-rules.jpg" /></p>
+<h4 id="general-parameters-and-visual-parameters">General parameters and visual parameters</h4>
 <p>En esta sección se establece cada cuantos segundos debe actualizarse la ventana donde se muestran las entradas de configuración. También se puede establecer el título de la aplicación para que se muestre en la “barra de título”.</p>
-<p><img alt="gral parameters" src="../img/bases/admin/10gral-param.jpg" /></p>
+<p><img alt="gral parameters" src="/img/bases/admin/10general-parameters.jpg" /></p>
 <p>Utilice el botón de guardar para  almacenar los cambios realizados en los Parámetros de sistema.</p>
 <h2 id="conceptos-de-vesta"><strong>Conceptos de Vesta</strong></h2>
 <p>Esta sección se da una definición sobre cada uno de estos componentes principales para proporcionar un panorama mas fácil de entender sobre lo que son, lo que hacen y cómo funcionan juntos. </p>

@@ -609,6 +609,7 @@
                 
                 
                 <h1 id="instalacion-de-vesta">Instalación de Vesta</h1>
+<hr />
 <p>Para que Vesta pueda funcionar correctamente en el equipo, es necesario consultar previamente los requisitos que debe cumplir el sistema.</p>
 <h2 id="requisitos-del-sistema"><strong>Requisitos del Sistema</strong></h2>
 <hr />
@@ -637,6 +638,7 @@
 <p><img alt="" src="../img/instalacion/linux-windows-hosting.png" /></p>
 <h3 id="base-de-datos"><strong>Base de Datos</strong></h3>
 <hr />
+<p>Se debe tener instalado y configurado en el equipo un manejador de base de datos que cumpla con las siguientes características: </p>
 <ul>
 <li>
 <p>Versión</p>
@@ -661,26 +663,39 @@
 <li>Usuario: Se deberá disponer de un usuario con permisos de creación de objetos sobre la base de datos.</li>
 </ul>
 <p><img alt="" src="../img/instalacion/oracle_database1.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Se debe configurar la base de datos previamente ya que los datos seran usados al momento de instalar Vesta.</p>
+</div>
 <h2 id="instalacion">Instalación</h2>
 <hr />
 <p>Una vez que se han cumplido los requisitos previos a la instalación del producto, se procede con la instalación.</p>
 <h3 id="1-descomprimir">1. Descomprimir</h3>
+<hr />
 <p>Para poder instalar Vesta, se debe obtener el archivo “.zip” proveniente del repositorio oficial del producto. La carpeta contiene los archivos necesarios para el proceso de instalación del producto.
 Una vez descargado el archivo se procede a extraerlo:​</p>
 <p><img alt="" src="/img/instalacion/winrar.jpg" /></p>
 <h3 id="2-ejecutar">2. Ejecutar</h3>
+<hr />
 <p>Con los archivos completos, se procede a instalar Vesta. La pantalla muestra la selección del archivo run.bat o run.sh dependiendo la plataforma de sistema operativo, en Microsoft Windows, se ejecuta el comando run.bat, si corresponde a Linux ejecutamos run.sh</p>
 <p><em>Right Click  &gt; run.bat &gt; Ejecutar como administrador</em></p>
 <p><img alt="" src="/img/instalacion/ejecutar.jpg" /></p>
 <h3 id="3-instalando">3. Instalando</h3>
-<p>Una vez ejecutado el comando, muestra el asistente de instalación, se siguen las instrucciones:</p>
+<hr />
+<p>Una vez ejecutado el comando, inicia el asistente de instalación mostrando la ventana de cmd para iniciar el proceso de Vesta y la ventana con el asistente de instalación, se siguen las instrucciones:</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>La ventana del cmd, se debe dejar abierta mientras se usa la aplicación Vesta.</p>
+</div>
 <p><img alt="" src="../img/instalacion/1welcome.png" /></p>
-<p>Donde:</p>
-<p>​
+<p>Donde:
+​
 <strong>Principal</strong>(Default): El repositorio de metadatos del producto es creado e inicializado. Este tipo de instalación es conocido como instalación primaria. </p>
 <p><strong>Secundaria</strong>: En este tipo de instalación, el producto es configurado en un repositorio de metadatos existente.</p>
-<p><strong>Damos  click  en el botón “Next”</strong></p>
+<p>La primer ventana se deja intacta.</p>
+<p><em>Click  en el botón “Next”</em></p>
 <h3 id="4-datos-de-la-organizacion">4. Datos de la organización</h3>
+<hr />
 <p>En la ventana que se muestra se deberán ingresar los datos de la organización que usara Vesta:</p>
 <p><img alt="" src="../img/instalacion/2actv.jpg" /></p>
 <ul>
@@ -700,6 +715,7 @@ Una vez descargado el archivo se procede a extraerlo:​</p>
 </ul>
 <p>Se continua con el asistente de instalación, se da click en Next</p>
 <h3 id="5-configuracion-a-la-base-de-datos">5. Configuración a la base de datos</h3>
+<hr />
 <p>En la ventana que se muestra se deben ingresar los datos de acceso a la base de datos para su configuración.
 La base de datos contendrá el repositorio de metadatos de la aplicación. Los datos ingresados durante el uso de Vesta serán encriptados y almacenados de manera segura por la aplicación.</p>
 <p><img alt="" src="../img/instalacion/3based.png" /></p>
@@ -715,20 +731,29 @@ La base de datos contendrá el repositorio de metadatos de la aplicación. Los d
 <p>El usuario ingresado en el campo “User” deberá contar con los permisos necesarios para la creación de objetos dentro de la base de datos. Cualquier usuario de base de datos podrá ser utilizado siempre que cumpla con este criterio.</p>
 </div>
 <h3 id="6-directorio-de-instalacion">6. Directorio de instalación</h3>
+<hr />
 <p>En la siguiente pantalla se deberá seleccionar el directorio de instalación denominado “VESTA_HOME”. Se podrá elegir la ubicación que mejor sea considerada.</p>
 <p><img alt="" src="../img/instalacion/4directorio.jpg" /></p>
 <p>Una vez elegida la ubicación, damos click al botón “Next” para continuar con la instalación.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Se debe crear previamente la carpeta donde sera instalada la aplicación.</p>
+</div>
 <h3 id="7-aviso-de-privacidad">7. Aviso de privacidad</h3>
+<hr />
 <p>A continuación, se muestra el aviso de privacidad del producto, el cual deberá ser aceptado para continuar el proceso de instalación.</p>
 <p><img alt="" src="../img/instalacion/5privacidad.jpg" /></p>
 <h3 id="8-resumen-de-la-instalacion">8. Resumen de la instalación</h3>
+<hr />
 <p>Una vez que se cubrió esta parte de la instalación, muestra el resumen de los datos ingresados:</p>
 <p><img alt="" src="../img/instalacion/6resumen.jpg" /></p>
 <h3 id="9-instalacion-de-componentes">9. Instalación de componentes.</h3>
+<hr />
 <p>Una vez comprobada la información se procede a instalar la aplicación con las configuraciones ingresadas en el asistente de instalación.</p>
 <p><img alt="" src="../img/instalacion/7inst.jpg" /></p>
 <p>Una vez completado el 100 %, damos click  al botón “Next”.</p>
 <h3 id="10-fin-de-la-instalacion">10. Fin de la instalación.</h3>
+<hr />
 <p>Una vez completa la instalación muestra la ventana de termino:</p>
 <p><img alt="" src="../img/instalacion/8fin.jpg" /></p>
 <div class="admonition nota">
