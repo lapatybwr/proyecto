@@ -1,0 +1,870 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Plugins - Vesta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#plug-ins" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Vesta" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Vesta
+              </span>
+              <span class="md-header-nav__topic">
+                Plugins
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Vesta" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Vesta
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../conceptos/" title="Conceptos" class="md-nav__link">
+      Conceptos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ingreso/" title="Ingreso" class="md-nav__link">
+      Ingreso
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../funciones/" title="Funciones básicas" class="md-nav__link">
+      Funciones básicas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../implementando/" title="Implementando" class="md-nav__link">
+      Implementando
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../entries/" title="Entries" class="md-nav__link">
+      Entries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Plugins
+      </label>
+    
+    <a href="./" title="Plugins" class="md-nav__link md-nav__link--active">
+      Plugins
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-weblogic" title="Install WebLogic" class="md-nav__link">
+    Install WebLogic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-plug-in-weblogic-11g" title="Configuración de Plug-in “WebLogic 11g”" class="md-nav__link">
+    Configuración de Plug-in “WebLogic 11g”
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-la-configuracion-weblogic" title="Recuperación de la configuración “WebLogic”" class="md-nav__link">
+    Recuperación de la configuración “WebLogic”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-entradas-weblogic-11g" title="Listar entradas “WebLogic 11g”" class="md-nav__link">
+    Listar entradas “WebLogic 11g”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas-en-plugins" title="Opciones sobre entradas en plugins" class="md-nav__link">
+    Opciones sobre entradas en plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas" title="Opciones sobre entradas" class="md-nav__link">
+    Opciones sobre entradas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migrate-to" title="Migrate to" class="md-nav__link">
+    Migrate to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-to-server-individual" title="Push to Server (Individual)" class="md-nav__link">
+    Push to Server (Individual)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolver-conflictos" title="Resolver conflictos" class="md-nav__link">
+    Resolver conflictos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#down-from-server" title="Down from Server" class="md-nav__link">
+    Down from Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restore-default-values" title="Restore default values" class="md-nav__link">
+    Restore default values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sincronizacion-de-plug-in-weblogic" title="Sincronización de Plug-in “WebLogic”" class="md-nav__link">
+    Sincronización de Plug-in “WebLogic”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-to-server" title="Push to server" class="md-nav__link">
+    Push to server
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#down-from-server_1" title="Down from server" class="md-nav__link">
+    Down from server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../plugin_soa/" title="Plugin SOA" class="md-nav__link">
+      Plugin SOA
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../patches/" title="Patches" class="md-nav__link">
+      Patches
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../auditor/" title="Auditor" class="md-nav__link">
+      Auditor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notificaciones/" title="Notificaciones" class="md-nav__link">
+      Notificaciones
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-weblogic" title="Install WebLogic" class="md-nav__link">
+    Install WebLogic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-plug-in-weblogic-11g" title="Configuración de Plug-in “WebLogic 11g”" class="md-nav__link">
+    Configuración de Plug-in “WebLogic 11g”
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-la-configuracion-weblogic" title="Recuperación de la configuración “WebLogic”" class="md-nav__link">
+    Recuperación de la configuración “WebLogic”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-entradas-weblogic-11g" title="Listar entradas “WebLogic 11g”" class="md-nav__link">
+    Listar entradas “WebLogic 11g”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas-en-plugins" title="Opciones sobre entradas en plugins" class="md-nav__link">
+    Opciones sobre entradas en plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas" title="Opciones sobre entradas" class="md-nav__link">
+    Opciones sobre entradas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migrate-to" title="Migrate to" class="md-nav__link">
+    Migrate to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-to-server-individual" title="Push to Server (Individual)" class="md-nav__link">
+    Push to Server (Individual)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolver-conflictos" title="Resolver conflictos" class="md-nav__link">
+    Resolver conflictos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#down-from-server" title="Down from Server" class="md-nav__link">
+    Down from Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restore-default-values" title="Restore default values" class="md-nav__link">
+    Restore default values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sincronizacion-de-plug-in-weblogic" title="Sincronización de Plug-in “WebLogic”" class="md-nav__link">
+    Sincronización de Plug-in “WebLogic”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-to-server" title="Push to server" class="md-nav__link">
+    Push to server
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#down-from-server_1" title="Down from server" class="md-nav__link">
+    Down from server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="plug-ins"><strong>Plug-Ins</strong></h1>
+<hr />
+<p>Los plugins son componentes adicionales de Vesta que le permiten acceder a un aplicativo y descubrir u obtener automáticamente sus configuraciones.</p>
+<p><strong>VESTA</strong> cuenta con una serie de Plug-ins Oracle WebLogic 11g, y WebLogic 12c que permiten la generación automatizada de componentes, estos “Plug-ins” a su vez están encargados de recuperar las configuraciones de los servidores y almacenarlos en la aplicación en modo de “Entradas”, mismas que son asociadas a una aplicación y a un ambiente en particular.</p>
+<p>También se dispone de los Plug-ins Oracle SOA Suite 11g y 12g que permiten la administración de configuraciones de componentes principales.</p>
+<p>Es importante mencionar que se debe instalar el plugin de acuerdo con la versión de la base de datos que se tenga instalado, por ejemplo, si se cuenta con Oracle DataBase 11g se debe de instalar el plugin de WebLogic 11g. </p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Es importante remarcar que se debe tener instalado en el equipo de computo el plugin correspondiente para poder instalarlo en la aplicación. Para esto se debe descargar de la pagina oficial de Oracle.</p>
+</div>
+<p>En esta sección se abordarán los plugins correspondientes a "Weblogic y SOA". Cabe mencionar que la instalación es de forma similar para ambos, solo cambian los nombres de los plugins con sus respectivas nomenclaturas, el procedimientos y los pasos son prácticamente los mismos. Se describirá de manera general haciendo referencia solo mencionando el plugin sin la versión, que correspondería a: Weblogic 11g o Weblogic 12c y SOA 11g o SOA 12c</p>
+<h2 id="install-weblogic"><strong>Install WebLogic</strong></h2>
+<hr />
+<p>Se procede a la instalación de WebLogic </p>
+<p><em>Click  Plug-Ins &gt; Install&gt; WebLogic &gt; General.</em></p>
+<p><img alt="1 menú plugin" src="../img/weblogic/1menu-plugin.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El release del Plugin de WebLogic 11g corresponden a las versiones 10.3.x.</p>
+<p>El release del Plugin de WebLogic 12c corresponde a las versiones de 12.1 , 12.2.x</p>
+</div>
+<p>En la siguiente pantalla se deberá seleccionar el plug-in a instalar, se solicitará una serie de archivos y directorios requeridos. Para el caso de los plug-ins de WebLogic 11g y WebLogic 12c, los siguientes datos son solicitados:</p>
+<p><img alt="2 ventana install weblogic" src="../img/weblogic/2ventana-installweblogic.jpg" /></p>
+<p><strong>Browser</strong> Este botón permite seleccionar el archivo .zip que contiene los binarios de instalación.</p>
+<p><strong>Browser</strong> Este botón permite seleccionar el directorio ORACLE_HOME de una instalación local de WebLogic 11g o WebLogic 12c respectivamente.</p>
+<p>Al finalizar el proceso de instalación, la aplicación deberá ser reiniciada.</p>
+<p><img alt="3 confirmacion para reiniciar" src="../img/weblogic/3confirmacionreiniciar.jpg" /></p>
+<h2 id="configuracion-de-plug-in-weblogic-11g"><strong>Configuración de Plug-in “WebLogic 11g”</strong></h2>
+<hr />
+<p>Una vez que el plugin se encuentra instalado en la aplicación, se procede a configurarlo.</p>
+<p><em>Click  Plug-Ins &gt; Configure</em></p>
+<p><img alt="4 menú configure" src="../img/weblogic/4menuconfigure.jpg" /></p>
+<p>En la siguiente pantalla se deberá seleccionar la “Aplicación y Ambiente” al cual estará asociado el Plug-in “WebLogic 11g”. Es importante conocer que una misma Aplicación” y Ambiente” pueden estar asociados a múltiples plug-ins.</p>
+<p><img alt="5 ventana de configuración" src="../img/weblogic/5ventanaconf.jpg" /></p>
+<p>En la siguiente pantalla se deberán ingresar los datos de conexión al servidor de dominio “WebLogic 11g”.</p>
+<p><img alt="6 datos configuración" src="../img/weblogic/6datosconf.jpg" /></p>
+<p><strong><em>Servidor:</em></strong> IP en donde recibe peticiones el servidor de dominio WebLogic.</p>
+<p><strong><em>Puerto:</em></strong> Puerto en donde recibe peticiones el servidor de dominio WebLogic (Admin Server).</p>
+<p><strong><em>Usuario:</em></strong> Usuario de conexión, este usuario deberá pertenecer al grupo de dominio WebLogic “Administrators”. </p>
+<p><strong><em>Password:</em></strong> Contraseña del usuario de conexión.</p>
+<p>El proceso de conexión al servidor es iniciado, en ese momento las diferentes entradas de configuración en el servidor de dominio “WebLogic” serán descubiertas.</p>
+<p><img alt="7 configuracion en proceso" src="../img/weblogic/7confenproceso.jpg" /></p>
+<h3 id="recuperacion-de-la-configuracion-weblogic"><strong>Recuperación de la configuración “WebLogic”</strong></h3>
+<hr />
+<p>En la siguiente pantalla se deberá seleccionar las entradas de configuración a descargar desde el servidor de dominio “WebLogic 11g”.</p>
+<p><img alt="8 Config weblogic" src="../img/weblogic/8Configweblogic.jpg" /></p>
+<p><strong><em>Select All</em></strong> Este botón selecciona todas las propiedades del componente de configuración seleccionado.</p>
+<p><strong><em>Select Suggested</em></strong> Este botón selecciona las propiedades del componente de configuración sugeridas por el sistema.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Las propiedades sugeridas por el sistema indican los campos necesarios para el proceso de aprovisionamiento de la configuración en el servidor de dominio “WebLogic”.</p>
+</div>
+<p><strong><em>Unselect All</em></strong> Este botón deselecciona todas las propiedades del componente de configuración seleccionado.</p>
+<p><strong><em>Set as layout</em></strong> Esta opción cuando está habilitada permite guardar las entradas de configuración como plantilla, de manera que para próximas importaciones de otros ambientes se pre-seleccionen las entradas de configuraciones definidas en la plantilla.</p>
+<p><strong><em>Import</em></strong> Este botón realiza la importación de las configuraciones seleccionadas desde WebLogic hacia Vesta.</p>
+<p>Una vez seleccionadas las entradas de configuración el proceso de descarga de la configuración es iniciado.</p>
+<p><img alt="9 Descarga configuración" src="../img/weblogic/9Descargaconfiguracion.jpg" /></p>
+<h3 id="listar-entradas-weblogic-11g"><strong>Listar entradas “WebLogic 11g”</strong></h3>
+<p>En la siguiente pantalla se muestran las entradas de configuración provenientes de un plug-in, estas entradas son identificadas mediante iconos de color “morado”.</p>
+<p><em>Click  File &gt; Entries</em></p>
+<p><img alt="10 ventana entries" src="../img/weblogic/10ventanaentries.jpg" /></p>
+<h3 id="opciones-sobre-entradas-en-plugins"><strong>Opciones sobre entradas en plugins</strong></h3>
+<p>Una vez que han sido definidas las entradas de plugins, se cuenta con una serie de opciones a realizar sobre ellas, estas opciones se encuentran en el menú emergente sobre la entrada seleccionada. </p>
+<h3 id="opciones-sobre-entradas"><strong>Opciones sobre entradas</strong></h3>
+<hr />
+<p>Opciones generales</p>
+<p>Las siguientes opciones se encuentran descritas en la sección Configuración inicial &gt; <a href="../opciones/">Opciones sobre entradas</a>&gt; </p>
+<ul>
+<li>Acquiere control</li>
+<li>Release control</li>
+<li>View entry</li>
+<li>Duplicate entry</li>
+<li>Promote entry</li>
+<li>Delete entry</li>
+<li>View children</li>
+<li>View History</li>
+<li>Tree History</li>
+<li>Copy Selection</li>
+<li>Copy property</li>
+<li>Compare</li>
+</ul>
+<h4 id="migrate-to"><strong>Migrate to</strong></h4>
+<p>Esta opción permite migrar una configuración de 11g a una configuración de 12c.</p>
+<p><em>Right click  entry &gt; Migrate to &gt; Version to migrate</em></p>
+<p><img alt="19 version to migrate" src="../img/weblogic/19versiontomigrate.jpg" /></p>
+<h4 id="push-to-server-individual"><strong>Push to Server (Individual)</strong></h4>
+<p>Esta opción permite enviar la entrada de configuración seleccionada hacia el servidor de dominio “WebLogic” destino. 
+Nota: Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
+<p><em>Right Click  &gt; Push to Server</em></p>
+<p><img alt="20 menu push to server" src="../img/weblogic/20menupushtosever.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Confirmación es requerida</p>
+</div>
+<p><img alt="21 ventana push to server" src="../img/weblogic/21ventanapush.jpg" /></p>
+<p><strong>Start</strong> Al presionar este botón el proceso de aprovisionamiento de la configuración es iniciado.</p>
+<p><strong>Close</strong> Este botón es habilitado una vez finaliza el proceso de aprovisionamiento de la configuración.</p>
+<p><img alt="22 sincronizacion completa" src="../img/weblogic/22sincronizacioncompleta.jpg" /></p>
+<p>Cuando una configuración no pudo ser aprovisionada en el servidor de dominio “WebLogic” manda la siguiente pantalla indicando el inconveniente:</p>
+<p><img alt="23 push to server" src="../img/weblogic/23pushtoserver.jpg" /></p>
+<p><strong>RollBack</strong> Este botón es habilitado cuando una configuración no pudo ser aprovisionada en el servidor de dominio “WebLogic” permitiendo así deshacer los cambios en conflicto.</p>
+<h4 id="resolver-conflictos"><strong>Resolver conflictos</strong></h4>
+<p>Esta opción permite resolver conflictos de sincronización entre la configuración almacenada en Vesta y la configuración en el servidor “WebLogic”. Esta opción es útil cuando el envío de la configuración realizada hacia el servidor de dominio “WebLogic” no pudo comprobarse de manera automática por el sistema. Garantizando que la configuración almacenada en Vesta y la configuración del servidor de dominio “WebLogic” es concisa.</p>
+<div class="admonition notas">
+<p class="admonition-title">Notas</p>
+<p>Validación manual por parte del usuario dentro del servidor de dominio “WebLogic” es necesaria.
+Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
+</div>
+<p><em>Right Click &gt; Resolve Conflicts</em></p>
+<p><img alt="24 menu resolve conflicts" src="../img/weblogic/24menuresolveconflicts.jpg" /></p>
+<p>Al ingresar a “Resolver Conflicts”, muestra en pantalla un mensaje preguntando si está seguro de realizar dicha acción.</p>
+<p><img alt="25 confirmar resolver" src="../img/weblogic/25confirmarresolver.jpg" /></p>
+<p><strong>Si</strong> Al presionar este botón el proceso de resolución de la configuración es iniciado.</p>
+<p><strong>No</strong> Al presionar este botón el proceso de resolución de la configuración es cancelado.</p>
+<p>Resultados: Cuando un conflicto es resuelto, el icono asociado a la entrada de configuración es cambiado de dirección.</p>
+<p><img alt="26 resolviendo conflictos" src="../img/weblogic/26resolviendoconflictos.jpg" /></p>
+<p>Al termino, muestra el mensaje de que se resolvió el conflicto.</p>
+<p><img alt="27 conflicto resuelto" src="../img/weblogic/27conflictoresuelto.jpg" /></p>
+<h4 id="down-from-server"><strong>Down from Server</strong></h4>
+<p>Esta opción permite descargar los cambios de configuración desde el servidor de dominio “WebLogic” hacia la entrada de configuración seleccionada dentro de la aplicación. </p>
+<blockquote>
+<p>Nota: Esta opción solo está disponible para “entradas de configuración” asociadas a plug-ins.</p>
+</blockquote>
+<p><em>Right Click  &gt; Down from Server</em></p>
+<p><img alt="28 menu down server" src="../img/weblogic/28menudownserver.jpg" /></p>
+<p>Al seleccionar esta opción empieza cargar, una vez terminado, muestra la ventana</p>
+<p><img alt="29 ventana down server" src="../img/weblogic/29ventanadownserver.jpg" /></p>
+<p><img alt="30 punto" src="../img/weblogic/30punto.jpg" /> Esta opción permite aceptar el cambio pendiente desde el servidor de dominio “WebLogic”.</p>
+<p><img alt="31 sel categoria" src="../img/weblogic/31selcategoria.jpg" /> Esta opción permite la selección de categoría. Es útil cuando se desea identificar un cambio de alta prioridad de manera visual.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>El historial de cambios sobre las entradas de configuración descargadas será actualizado de manera automática.</p>
+</div>
+<p>La siguiente pantalla muestra el resumen de cambios descargados desde el servidor de dominio “WebLogic” hacia VESTA. Los enlaces situados en la parte superior del cambio permiten la navegación a la entrada de configuración modificada.</p>
+<p><img alt="32 resumen de cambios" src="../img/weblogic/32resumencambios.jpg" /></p>
+<p>Al presionar los enlaces situados en la parte superior de la entrada de configuración se mostrará la pantalla “visualización de entradas”.</p>
+<p>La siguiente pantalla permite visualizar las entradas de configuración descargadas desde el servidor de dominio “WebLogic”.</p>
+<p><img alt="33 entries de config descargadas" src="../img/weblogic/33entriesconfigcargadas.jpg" /></p>
+<h4 id="restore-default-values"><strong>Restore default values</strong></h4>
+<p>Esta opción establece los valores por default de toda la entrada de configuración, los valores por default son los establecidos por el fabricante del application server.</p>
+<p><em>Right click entry &gt; Restore default values</em></p>
+<p><img alt="34 menu restore" src="../img/weblogic/34restore.jpg" /></p>
+<h2 id="sincronizacion-de-plug-in-weblogic">Sincronización de Plug-in “WebLogic”</h2>
+<hr />
+<p>El proceso de sincronización es el método mediante el cual las diferentes entradas de configuración almacenadas en VESTA y las configuraciones en el servidor de dominio “WebLogic” son sincronizadas.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea sincronizar más de una entrada de configuración entre el servidor de dominio “WebLogic” y Vesta.</p>
+</div>
+<p><em>Click Plug-Ins &gt; Synchronize</em></p>
+<p><img alt="35 menu syncrinize" src="../img/weblogic/35sincrinice.jpg" /></p>
+<p>Al ingresar a la opción de sincronización, muestra la siguiente ventana:</p>
+<p><img alt="36 ventana sincro" src="../img/weblogic/36ventanasincro.jpg" /></p>
+<p><img alt="37 btn paloma" src="../img/weblogic/37btnpaloma.jpg" /> Esta opción selecciona la aplicación y ambiente a sincronizar.</p>
+<p><strong>Push to Server</strong> Al presionar este botón las entradas de configuración almacenados en Vesta son enviadas hacia el servidor de dominio “WebLogic”.</p>
+<p><strong>Down from Server</strong> Al presionar este botón las entradas de configuración almacenados en el servidor de dominio “WebLogic” son descargados hacia Vesta.</p>
+<h2 id="push-to-server"><strong>Push to server</strong></h2>
+<p>Esta opción permite enviar de manera selectiva un conjunto de configuraciones almacenadas en Vesta hacia el servidor de dominio “WebLogic”.</p>
+<p><img alt="38 pantalla push to server" src="../img/weblogic/38pantallapushtoserver.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea enviar un conjunto de configuraciones de manera global.</p>
+</div>
+<p><strong>Start</strong> Al presionar este botón el proceso de aprovisionamiento de la configuración es iniciado.</p>
+<p><strong>Close</strong> Este botón es habilitado una vez finaliza el proceso de aprovisionamiento de la configuración.</p>
+<p><img alt="39 btn cmd" src="../img/weblogic/39btncmd.jpg" />Esta opción permite la visualización del archivo log generado durante el proceso de aprovisionamiento de la configuración.</p>
+<p><img alt="40 ventana cmd" src="../img/weblogic/40ventanacmd.jpg" /></p>
+<h3 id="down-from-server_1"><strong>Down from server</strong></h3>
+<p>Esta opción permite descargar de manera selectiva un conjunto de configuraciones desde el servidor de dominio “WebLogic” hacia Vesta.</p>
+<p><img alt="41 down from server" src="../img/weblogic/41downfromserver.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Esta opción es útil cuando se desea descargar un conjunto de configuraciones de manera global. </p>
+</div>
+<p><img alt="37 btn paloma" src="../img/weblogic/37btnpaloma.jpg" /> Esta opción permite aceptar el cambio pendiente desde el servidor de dominio “WebLogic”.</p>
+<p><img alt="31 sel categoria" src="../img/weblogic/31selcategoria.jpg" /> Esta opción permite la selección de categoría. Esta opción es útil cuando se desea identificar un cambio de alta prioridad de manera visual.</p>
+<p>La siguiente pantalla muestra el resumen de cambios descargados desde el servidor de dominio “WebLogic” hacia Vesta. Los enlaces situados en la parte superior del cambio permiten la navegación a la entrada de configuración modificado.</p>
+<p><img alt="42 result sincronización" src="../img/weblogic/42resultsincronizacion.jpg" /></p>
+<p>Al presionar los enlaces situados en la parte superior de la entrada de configuración se mostrará la pantalla “visualización de entradas”.</p>
+<p>La siguiente pantalla permite visualizar las entradas de configuración descargados desde el servidor de dominio “WebLogic”.</p>
+<p><img alt="43 view children" src="../img/weblogic/43viewchildren.jpg" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../entries/" title="Entries" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Entries
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../plugin_soa/" title="Plugin SOA" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Plugin SOA
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,876 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Funciones básicas - Vesta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#elementos-de-la-aplicacion" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Vesta" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Vesta
+              </span>
+              <span class="md-header-nav__topic">
+                Funciones básicas
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Vesta" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Vesta
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../conceptos/" title="Conceptos" class="md-nav__link">
+      Conceptos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ingreso/" title="Ingreso" class="md-nav__link">
+      Ingreso
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Funciones básicas
+      </label>
+    
+    <a href="./" title="Funciones básicas" class="md-nav__link md-nav__link--active">
+      Funciones básicas
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#menu-users" title="Menú Users" class="md-nav__link">
+    Menú Users
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-users" title="Add Users" class="md-nav__link">
+    Add Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" title="Users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profiles" title="Profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-permissions" title="View Permissions" class="md-nav__link">
+    View Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password" title="Change Password" class="md-nav__link">
+    Change Password
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-administration" title="Menú Administration" class="md-nav__link">
+    Menú Administration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-all-entries" title="Release all entries" class="md-nav__link">
+    Release all entries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" title="Logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-parameters" title="System Parameters" class="md-nav__link">
+    System Parameters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-parameters" title="Password Parameters" class="md-nav__link">
+    Password Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-rules" title="Password rules" class="md-nav__link">
+    Password rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-parameters-and-visual-parameters" title="General parameters and visual parameters" class="md-nav__link">
+    General parameters and visual parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-de-vesta" title="Conceptos de Vesta" class="md-nav__link">
+    Conceptos de Vesta
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-basicos" title="Conceptos Básicos" class="md-nav__link">
+    Conceptos Básicos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../implementando/" title="Implementando" class="md-nav__link">
+      Implementando
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../entries/" title="Entries" class="md-nav__link">
+      Entries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../plugin_weblogic/" title="Plugins" class="md-nav__link">
+      Plugins
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../plugin_soa/" title="Plugin SOA" class="md-nav__link">
+      Plugin SOA
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../patches/" title="Patches" class="md-nav__link">
+      Patches
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../auditor/" title="Auditor" class="md-nav__link">
+      Auditor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notificaciones/" title="Notificaciones" class="md-nav__link">
+      Notificaciones
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#menu-users" title="Menú Users" class="md-nav__link">
+    Menú Users
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-users" title="Add Users" class="md-nav__link">
+    Add Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" title="Users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profiles" title="Profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-permissions" title="View Permissions" class="md-nav__link">
+    View Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password" title="Change Password" class="md-nav__link">
+    Change Password
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-administration" title="Menú Administration" class="md-nav__link">
+    Menú Administration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-all-entries" title="Release all entries" class="md-nav__link">
+    Release all entries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" title="Logs" class="md-nav__link">
+    Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-parameters" title="System Parameters" class="md-nav__link">
+    System Parameters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#password-parameters" title="Password Parameters" class="md-nav__link">
+    Password Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-rules" title="Password rules" class="md-nav__link">
+    Password rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-parameters-and-visual-parameters" title="General parameters and visual parameters" class="md-nav__link">
+    General parameters and visual parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-de-vesta" title="Conceptos de Vesta" class="md-nav__link">
+    Conceptos de Vesta
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-basicos" title="Conceptos Básicos" class="md-nav__link">
+    Conceptos Básicos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="elementos-de-la-aplicacion"><strong>Elementos de la aplicación</strong></h1>
+<hr />
+<p>Vesta se encuentra distribuido en cuatro menús: </p>
+<ol>
+<li>
+<p><a href="../implementando/">File</a></p>
+</li>
+<li>
+<p><a href="../plugin_weblogic/">Plugs-Ins</a></p>
+</li>
+<li>
+<p><a href="#menu-administration">Administration</a></p>
+</li>
+<li>
+<p><a href="#menu-users">Users</a></p>
+</li>
+</ol>
+<p>Cada menú cuenta con funciones específicas que se describirán de acuerdo con la prioridad de uso.</p>
+<p><img alt="Menús" src="../img/bases/1menu.jpg" /></p>
+<h2 id="menu-users"><strong>Menú Users</strong></h2>
+<hr />
+<p>En este menú se encuentran las configuraciones básicas sobre los usuarios.</p>
+<p><img alt="" src="../img/bases/2users.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Un usuario es la persona que tendrá acceso de la aplicación para su manipulación. </p>
+</div>
+<h3 id="add-users"><strong>Add Users</strong></h3>
+<hr />
+<p>En esta opción se pueden agregar usuarios. Un usuario debe estar asociado a un perfil, el perfil cuenta con permisos, por lo tanto, los permisos del perfil son los permisos que tendrá el usuario dentro de la aplicación.</p>
+<p>Para crear el usuario se accede a:</p>
+<p><em>Click  Users &gt; Add User</em></p>
+<p><img alt="" src="../img/bases/3add-users.jpg" /></p>
+<p>Al ingresar a esta opción, se muestra la siguiente ventana en la cual se ingresan los datos:</p>
+<p><img alt="" src="../img/bases/4crear.jpg" /></p>
+<ul>
+<li>Login: Es el usuario de acceso al sistema</li>
+<li>Password: Contraseña de acceso al sistema. Esta contraseña deberá cumplir con las <a href="#password-rules"><strong>reglas</strong></a> de seguridad establecidas por la aplicación, pero se debe tener en cuenta que será cambiada al ingresar al sistema.</li>
+<li>Confirm password: volvemos a ingresar la contraseña.</li>
+<li>Profile: Define el perfil y con ello los permisos de acceso</li>
+<li>Name: Nombre descriptivo del usuario dentro del sistema.</li>
+<li>Comment: Comentarios adicionales.</li>
+<li>Change to the next logging in: Para cambiar el password en el siguiente acceso a la aplicación (por seguridad es obligatorio no editable)</li>
+<li>Save: una vez completa la información, se guarda.</li>
+</ul>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Los criterios de seguridad son establecidos en el menú Administration &gt; System Prameters</p>
+</div>
+<h3 id="users"><strong>Users</strong></h3>
+<hr />
+<p>En esta opción se muestran los usuarios de la aplicación creados automáticamente y los que se hayan creado manualmente.</p>
+<p><em>Click  Users &gt; Users</em></p>
+<p><img alt="" src="../img/bases/5opcusers.jpg" /></p>
+<p>La siguiente pantalla permite visualizar los usuarios definidos dentro de la aplicación. El usuario admin cuenta con todos los permisos y el usuario monitor se encuentra limitado de permisos.  Si se crean mas usuarios, estos deben mostrarse en la ventana:</p>
+<p><img alt="" src="../img/bases/6edituser.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Usuarios con el permiso “Edit User”, podrán modificar el password y el perfil de otro usuario.</p>
+</div>
+<h3 id="profiles"><strong>Profiles</strong></h3>
+<hr />
+<p>Un perfil es una agrupación de permisos con funcionalidades específicas dentro de la aplicación.
+Todos los usuarios deben estar asociados a un perfil, ya que este le permitirá manipular el sistema de acuerdo a los permisos otorgados por el perfil.</p>
+<p><em>Click  Users &gt; Profiles</em></p>
+<p><img alt="" src="../img/bases/7profile.jpg" /></p>
+<p>La siguiente pantalla muestra los diferentes perfiles definidos dentro de la aplicación. Se pueden generar tantos perfiles como combinación de permisos sean necesarios.</p>
+<p><img alt="" src="../img/bases/8profiles.jpg" /></p>
+<p>La siguiente pantalla muestra los diferentes perfiles definidos dentro de la aplicación. Se pueden generar tantos perfiles como combinación de permisos sean necesarios.</p>
+<p><img alt="" src="../img/bases/9permisos.jpg" /></p>
+<p>El icono del signo <strong>mas</strong> habilita un nuevo registro en modo edición permitiendo la captura de un nuevo perfil.</p>
+<h4 id="view-permissions"><strong>View Permissions</strong></h4>
+<hr />
+<p>Cada “Perfil” cuenta con una serie de permisos que podrán ser listados seleccionando la opción “View permissions” del menú emergente.</p>
+<p><img alt="" src="../img/bases/9vepermisos.jpg" /></p>
+<p>En la siguiente pantalla se podrán seleccionar los permisos asociados a un Perfil.</p>
+<p><img alt="" src="../img/bases/9permisos.jpg" /></p>
+<p>Cada permiso otorga acceso a botones o funcionalidades específicas dentro de la aplicación y sobre los usuarios. Se debe ser cuidadoso en elegir el tipo de permisos que tendrá el perfil.</p>
+<h3 id="change-password"><strong>Change Password</strong></h3>
+<hr />
+<p>Es posible poder cambiar la contraseña del usuario una vez que se encuentre dentro de la aplicación. </p>
+<p><em>Click  Users &gt; Change password</em></p>
+<p><img alt="" src="../img/bases/10changepwd.jpg" /></p>
+<p>El usuario debe tener permisos para modificar el password de otro usuario. Ver sección de perfiles y permisos. El nuevo password debe cumplir las reglas de password según se indique en los parámetros de sistema. Ver sección de parámetros de sistema.</p>
+<p>En la siguiente pantalla el usuario será capaz de modificar su password de ingreso de manera personal. </p>
+<p><img alt="" src="../img/bases/11changepwd.jpg" /></p>
+<p>Escribir la actual contraseña y posteriormente asignar la nueva confirmándola nuevamente, considerando los parámetros establecidos.</p>
+<h2 id="menu-administration"><strong>Menú Administration</strong></h2>
+<p>Dentro del menú Administración se encuentran tres opciones, la primera que permite ceder el control adquirido sobre las entradas, la segunda opción es de consulta sobre los accesos al sistema con los usuarios que han ingresado y por último se tiene la opción del sistema de parámetros generales de la aplicación.</p>
+<p><img alt="" src="../img/bases/admin/1admin.jpg" /></p>
+<h3 id="release-all-entries"><strong>Release all entries</strong></h3>
+<hr />
+<p>Una vez que se empieza hacer uso de la aplicación Vesta se va adquiriendo el control sobre las entradas de datos para poder manipularlos. </p>
+<p>Mediante esta opción puede el usuario liberar el control de todo lo que adquirió en la aplicación para que otro usuario pueda hacer uso de ella o simplemente Liberar todo el control sobre las entradas.</p>
+<p><img alt="" src="../img/bases/admin/2rel-all.jpg" /></p>
+<p>Una vez elegida la opción manda un cuadro de dialogo sobre la pantalla principal, preguntando si esta seguro de dejar el control de las entradas.</p>
+<p><img alt="" src="../img/bases/admin/3resp-entries.jpg" /></p>
+<p>Elegimos la opción conveniente para dejar las entradas disponibles con la opción “Si” o bien, seguir con el control sobre ellas en la opción "No".</p>
+<h3 id="logs"><strong>Logs</strong></h3>
+<hr />
+<p>Para tener un registro controlado de los acceso y manipulación de la aplicación, se cuenta con la opción “Log” que permite la consulta de los movimientos realizados</p>
+<p><em>Click Administration &gt; Logs</em></p>
+<p><img alt="" src="../img/bases/admin/4logs.jpg" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Es posible realizar búsquedas específicas para encontrar información de manera más precisa.</p>
+</div>
+<p><strong><em>Búsqueda avanzada</em></strong></p>
+<p>La siguiente pantalla permite visualizar el log de las acciones realizadas por los usuarios dentro de la aplicación, en ella se buscó el usuario admin y se muestran los resultados de las acciones realizadas:</p>
+<p><img alt="" src="../img/bases/admin/5busqueda.jpg" /></p>
+<p><img alt="" src="../img/bases/admin/6advanced.jpg" /> 
+Esta opción permite definir criterios de búsqueda específicos que agilicen la identificación de acciones dentro de la aplicación</p>
+<h3 id="system-parameters"><strong>System Parameters</strong></h3>
+<hr />
+<p>En esta opción se pueden manipular los parámetros de configuración de las contraseñas y definir cada cuanto tiempo se actualizará la información en la ventana de las entradas. </p>
+<p><em>Click  administracion &gt; system parameters</em></p>
+<p>La siguiente pantalla permite visualizar y modificar los parámetros de sistema.</p>
+<p><img alt="" src="/img/bases/admin/visual-parameters.jpg" /></p>
+<h4 id="password-parameters">Password Parameters</h4>
+<p>Donde se establecen las configuraciones de password tales como notificaciones de expiración, días de password válido y numero de passwords que no podrán ser repetidos.</p>
+<p><img alt="" src="/img/bases/admin/8passwordparam.jpg" /></p>
+<h4 id="password-rules">Password rules</h4>
+<p>Establezca reglas de validación para establecer nuevos passwords como la longitud, mayúsculas, números y caracteres espaciales.</p>
+<p><img alt="" src="/img/bases/admin/9password-rules.jpg" /></p>
+<h4 id="general-parameters-and-visual-parameters">General parameters and visual parameters</h4>
+<p>En esta sección se establece cada cuantos segundos debe actualizarse la ventana donde se muestran las entradas de configuración. También se puede establecer el título de la aplicación para que se muestre en la “barra de título”.</p>
+<p><img alt="gral parameters" src="/img/bases/admin/10gral-param.jpg" /></p>
+<p>Utilice el botón de guardar para  almacenar los cambios realizados en los Parámetros de sistema.</p>
+<h2 id="conceptos-de-vesta"><strong>Conceptos de Vesta</strong></h2>
+<p>Esta sección se da una definición sobre cada uno de estos componentes principales para proporcionar un panorama mas fácil de entender sobre lo que son, lo que hacen y cómo funcionan juntos. </p>
+<h3 id="conceptos-basicos"><strong>Conceptos Básicos</strong></h3>
+<hr />
+<ul>
+<li><a href="../conceptos/#vesta">Vesta</a></li>
+<li><a href="../conceptos/#propiedades">Propiedades</a></li>
+<li><a href="../conceptos/#entradas-o-entries">Entradas o Entries</a></li>
+<li><a href="../conceptos/#entradas-de-configuracion">Entradas de configuración</a></li>
+<li><a href="../conceptos/#components">Components</a></li>
+<li><a href="../conceptos/#application">Application</a></li>
+<li><a href="../conceptos/#profile">Profile</a></li>
+<li><a href="../conceptos/#permisions">Permisions</a></li>
+<li><a href="../conceptos/#perfil-de-usuario">Perfil de Usuario</a></li>
+<li><a href="../conceptos/#application-group">Application Group</a></li>
+<li><a href="../conceptos/#environments">Environments</a></li>
+<li><a href="../conceptos/#categories">Categories</a></li>
+<li><a href="../conceptos/#plugin">Plugin</a></li>
+<li><a href="../conceptos/#log">Logs</a></li>
+</ul>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ingreso/" title="Ingreso" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Ingreso
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../implementando/" title="Implementando" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Implementando
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
