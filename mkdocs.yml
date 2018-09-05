@@ -1,20 +1,21 @@
 site_name: Vesta
-pages:
+nav:
     - Inicio: index.md
+    - Instalación: instalacion.md
+    - Ingreso: ingreso.md
+    - Menús: menus.md
     - Conceptos: conceptos.md
-    - Instalación: 2instalacion.md
-    - Ingreso: 3ingreso.md
-    - Funciones básicas: 4funciones.md
-    - Implementando: 5implementando.md
-    - Entries: 6entries.md
-    - Plugins: 7plugin_weblogic.md
-    - Plugin SOA: 8plugin_soa.md
-    - Patches: 9patches.md
-    - Auditor: 10auditor.md
-    - Notificaciones: 11notificaciones.md
+    - Implementando: entries.md
+    - Plugin WebLogic: plugin_weblogic.md
+    - Plugin SOA: plugin_soa.md
+    - Plugin OS: operating_system.md
+    - Patches: patches.md
+    - Notificaciones: notificaciones.md
     
 
 theme: material
-    
+  
+   
+   
 markdown_extensions: 
     - admonition    
