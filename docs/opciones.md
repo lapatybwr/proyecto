@@ -1,4 +1,4 @@
-#### Acquire control
+#### **1. Acquire control**
 ---
 
 Permite tomar el control de la entrada para poder tomar acciones sobre ella sin que otro usuario pueda modificarla mientras se encuentre utilizando. Esta opción es importante mencionar y resaltar que es útil ya que permitirá la manipulación de los elementos registrados, sin esta acción no se tendrán habilitadas las funciones.
@@ -12,7 +12,7 @@ Una vez que se adquiere el control, se habilitan las acciones sobre las caracter
 
 ![Acquire control](/img/entries/10acquiere2.jpg)
 
-#### Release control
+#### **2. Release control**
 ---
 
 Permite ceder el control adquirido de la entrada para que otros usuarios puedan hacer uso de ella.
@@ -23,12 +23,13 @@ Permite ceder el control adquirido de la entrada para que otros usuarios puedan 
 ![Menú release ctrol](/img/entries/11-release.jpg)
 
 
-#### Edit entry
+#### **3. Edit entry**
 ---
 
 Esta opción permite visualizar y editar los valores de una entrada de configuración.
 
-> Nota: Se requiere adquirir el control de la entrada previo a editar o eliminarla.
+!!! Nota 
+    Se requiere adquirir el control de la entrada previo a editar o eliminarla.
 
 *Right Click  > Edit Entry*
 
@@ -46,7 +47,7 @@ Donde se permite seleccionar la categoría en cada propiedad. Esta opción es ú
 ![Imagen hide category](/img/entries/13-showcategori.jpg)
 
 
-#### Duplicate entry
+#### **4. Duplicate entry**
 ---
 
 Esta opción permite duplicar una entrada de configuración en un aplicativo alterno o bien realizar una copia local.
@@ -60,14 +61,16 @@ La siguiente pantalla muestra la entrada duplicada, en la cual se puede seleccio
 
 ![Pantalla con entrada duplicada](/img/entries/15-duplientri.jpg)
 
-> Nota: Para duplicar la “entrada de configuración” en la misma aplicación solo es necesario indicar los nuevos valores de cada una de las propiedades y guardar con el botón “Save”
+!!! Nota
+    Para duplicar la “entrada de configuración” en la misma aplicación solo es necesario indicar los nuevos valores de cada una de las propiedades y guardar con el botón “Save”
 
-#### Promote entry
+#### **5. Promote entry**
 ---
 
 Esta opción permite promover una entrada de configuración hacia un ambiente subsecuente. Esta opción es útil cuando una metodología de integración continua es utilizada.
 
-> Nota: Esta opción es muy útil cuando se requiere la propagación de configuraciones entre ambientes.
+!!! Nota
+    Esta opción es muy útil cuando se requiere la propagación de configuraciones entre ambientes.
 
 *Right Click  > Promote Entry*
 
@@ -79,12 +82,13 @@ Esta opción permite elegir el ambiente al cual estará asociada la entrada de c
 
 ![Elegir ambiente](/img/entries/17-promEnriron.jpg)
 
-#### Delete entry
+#### **6. Delete entry**
 ---
 
 Esta opción permite eliminar una entrada de configuración.
 
-> Nota: Este proceso requiere confirmación por parte del usuario.
+!!! Nota
+    Este proceso requiere confirmación por parte del usuario.
 
 
 Se requiere adquirir el control de la entrada previo a editar o eliminar la entrada.
@@ -103,7 +107,7 @@ Al presionar el botón “Si” la entrada de configuración es eliminada.
 Al presionar el botón “No” el proceso de eliminación, no se realiza.
 
 
-#### View children
+#### **7. View children**
 ---
 
 La siguiente pantalla muestra las diferentes entradas de configuración anidadas y asociadas a la entrada de configuración principal.
@@ -118,10 +122,11 @@ Esta pantalla permite agregar, modificar, o eliminar “entradas” de configura
 
 ![signo mas](/img/entries/bton-mas.jpg) Este botón permite agregar una entrada de configuración del tipo seleccionado.
 
-> Nota: para poder hacer uso de la opción “View Children, se debe tener una asociación hacia otro componente por medio de una configuración de tipo “Bean”
+!!!Nota 
+    Para poder hacer uso de la opción “View Children, se debe tener una asociación hacia otro componente por medio de una configuración de tipo “Bean”
 
 
-#### View history
+#### **8. View history**
 ---
 
 La siguiente opción muestra el historial de cambios realizados sobre los valores de una “entrada de configuración” específica.
@@ -135,7 +140,7 @@ La siguiente pantalla muestra los cambios de valores sobre las entradas de confi
 ![menú view history](/img/entries/21-entrihistory.jpg)
 
 
-####Tree history
+#### **9. Tree history**
 ---
 
 En la siguiente opción se muestra el historial de cambios realizados sobre una “entrada de configuración” específica basada en las revisiones existentes.
@@ -170,7 +175,7 @@ Al final de la ventana se encuentran acciones a realizar:
 
 
 
-#### Copy Selection
+#### **10. Copy Selection**
 ---
 
 Esta pantalla permite copiar al portapapeles las entradas de configuración seleccionadas, será necesario crear una selección de la “entrada” con el mouse o con las teclas [Shift + Dirección].
@@ -183,7 +188,7 @@ Esta pantalla permite copiar al portapapeles las entradas de configuración sele
 > Nota: Esta opción es útil cuando se requiere compartir información con usuarios externos a VESTA.
 
 
-#### Copy Property
+#### **11. Copy Property**
 ---
 
 Esta pantalla permite copiar al portapapeles el valor de una entrada de configuración en específico. 
@@ -195,7 +200,7 @@ Esta pantalla permite copiar al portapapeles el valor de una entrada de configur
 > Nota: Esta opción es útil cuando se requiere copiar datos de URL’s o credenciales de acceso.
 
 
-#### Compare
+#### **12. Compare**
 ---
 
 Esta opción permite comparar entradas de configuración del mismo tipo.
@@ -206,7 +211,7 @@ Esta opción permite comparar entradas de configuración del mismo tipo.
 
 Al seleccionar la comparación, muestra el resultado obtenido
 
-![resultado de compare](/IMG/ENTRIES/30-comparecomp.JPG)
+![resultado de compare](/img/entries/30-comparecomp.jpg)
 
 Al final de la ventana se encuentran acciones a realizar: 
 
