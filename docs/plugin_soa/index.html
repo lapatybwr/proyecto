@@ -1,0 +1,632 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Plugin SOA - Vesta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#soa-11c" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Vesta" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Vesta
+              </span>
+              <span class="md-header-nav__topic">
+                Plugin SOA
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Vesta" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Vesta
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../conceptos/" title="Conceptos" class="md-nav__link">
+      Conceptos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ingreso/" title="Ingreso" class="md-nav__link">
+      Ingreso
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../funciones/" title="Funciones básicas" class="md-nav__link">
+      Funciones básicas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../implementando/" title="Implementando" class="md-nav__link">
+      Implementando
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../entries/" title="Entries" class="md-nav__link">
+      Entries
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../plugin_weblogic/" title="Plugins" class="md-nav__link">
+      Plugins
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Plugin SOA
+      </label>
+    
+    <a href="./" title="Plugin SOA" class="md-nav__link md-nav__link--active">
+      Plugin SOA
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-plug-in-soa-11g" title="Configuración de Plug-in “SOA 11g”" class="md-nav__link">
+    Configuración de Plug-in “SOA 11g”
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-la-configuracion-soa" title="Recuperación de la configuración “SOA”" class="md-nav__link">
+    Recuperación de la configuración “SOA”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-entradas-soa" title="Listar entradas “SOA”" class="md-nav__link">
+    Listar entradas “SOA”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite-properties" title="Composite properties" class="md-nav__link">
+    Composite properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas" title="Opciones sobre entradas" class="md-nav__link">
+    Opciones sobre entradas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../patches/" title="Patches" class="md-nav__link">
+      Patches
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../auditor/" title="Auditor" class="md-nav__link">
+      Auditor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notificaciones/" title="Notificaciones" class="md-nav__link">
+      Notificaciones
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-plug-in-soa-11g" title="Configuración de Plug-in “SOA 11g”" class="md-nav__link">
+    Configuración de Plug-in “SOA 11g”
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-la-configuracion-soa" title="Recuperación de la configuración “SOA”" class="md-nav__link">
+    Recuperación de la configuración “SOA”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-entradas-soa" title="Listar entradas “SOA”" class="md-nav__link">
+    Listar entradas “SOA”
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite-properties" title="Composite properties" class="md-nav__link">
+    Composite properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-sobre-entradas" title="Opciones sobre entradas" class="md-nav__link">
+    Opciones sobre entradas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="soa-11c"><strong>SOA 11c</strong></h1>
+<hr />
+<h2 id="instalacion"><strong>Instalación</strong></h2>
+<p><em>Click Plug-Ins &gt; Install &gt; SOA 11g</em></p>
+<p><img alt="1 menu install soa" src="../img/soa/1menuinstallsoa.jpg" /></p>
+<p>En la siguiente pantalla se deberá seleccionar el plug-in a instalar, se solicitará una serie de archivos y directorios requeridos por el plug-in. Para el caso de los plug-ins de SOA 11g o bien SOA 12c, los siguientes datos serán solicitados:</p>
+<p><img alt="2 seleccionar soa" src="../img/soa/2seleccionarsoa.jpg" /></p>
+<p><strong>Browser</strong> Este botón permite seleccionar el archivo .zip que contiene los binarios de instalación.</p>
+<p><strong>Browser</strong> Este botón permite seleccionar el directorio ORACLE_HOME de una instalación local de WebLogic 11c con Oracle SOA Suite 11g</p>
+<p>Al finalizar el proceso de instalación, la aplicación deberá ser reiniciada.</p>
+<p><img alt="3 soa reinicia" src="../img/soa/3soareinicia.jpg" /></p>
+<h2 id="configuracion-de-plug-in-soa-11g"><strong>Configuración de Plug-in “SOA 11g”</strong></h2>
+<hr />
+<p>Para utilizar el plugin se requiere utilizar la opción “Configure” del menú Plug-ins </p>
+<p><em>Click Plug-Ins &gt; Configure</em></p>
+<p><img alt="4 menu configure" src="../img/soa/4menuconfigure.jpg" /></p>
+<p>En la siguiente pantalla se deberá seleccionar la “aplicación y ambiente” al cual estará asociado el Plug-in “SOA 11g”. Es importante conocer que una misma “aplicación y ambiente” pueden estar asociados a múltiples plugins.</p>
+<p><img alt="5 sel soa" src="../img/soa/5selsoa.jpg" /></p>
+<p>En la siguiente pantalla se deberán ingresar los datos de conexión al servidor de dominio “SOA”.</p>
+<p><img alt="6 datos conexion" src="../img/soa/6datosconexion.jpg" /></p>
+<p><strong>Servidor:</strong> IP en donde recibe peticiones el servidor de dominio SOA.</p>
+<p><strong>Puerto:</strong> Donde recibe peticiones el servidor de dominio SOA (Cualquier MS).</p>
+<p><strong>Usuario:</strong> Usuario de conexión, este deberá pertenecer al grupo de dominio WebLogic, “Administrators”.</p>
+<p><strong>Password:</strong> Contraseña del usuario de conexión.</p>
+<p>El proceso de conexión al servidor es iniciado</p>
+<p><img alt="7 proceso iniciado" src="../img/soa/7procesoiniciado.jpg" /></p>
+<h3 id="recuperacion-de-la-configuracion-soa"><strong>Recuperación de la configuración “SOA”</strong></h3>
+<p>La siguiente pantalla muestra las diferentes categorías con las cuales dispone el plug-in “SOA”:</p>
+<p><img alt="8 recup config" src="../img/soa/8recupconfig.jpg" /></p>
+<p><strong>soaProperties</strong>
+Contiene las entradas de configuración comunes del motor de procesamiento SOA.</p>
+<p><img alt="9 soa properties" src="../img/soa/9soaproperties.jpg" /></p>
+<p><strong><em>Select All</em></strong> Este botón selecciona todas las propiedades del componente de configuración seleccionado.</p>
+<p><strong><em>Select Suggested</em></strong> Este botón selecciona las propiedades del componente de configuración sugeridas por el sistema.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Las propiedades sugeridas por el sistema indican los campos necesarios para el proceso de aprovisionamiento de la configuración en el servidor de dominio “SOA”</p>
+</div>
+<p><strong><em>Unselect All</em></strong> Este botón deselecciona todas las propiedades del componente de configuración seleccionado.</p>
+<p><strong>composite  Properties</strong>
+Contiene los ítems de configuración asociados a los servicios SOA.</p>
+<p>La siguiente pantalla muestra los diferentes servicios de dominio SOA, estos servicios son agrupados por categorías según la partición a la que pertenecen.</p>
+<p><img alt="10 composite properties" src="../img/soa/10compositeproperties.jpg" /></p>
+<p>El proceso de descarga es iniciado.</p>
+<p><img alt="11 descarga iniciada" src="../img/soa/11descargainiciada.jpg" /></p>
+<p><strong>Adapters</strong></p>
+<p>Contiene las entradas de configuración asociados a los JCA Adapters.</p>
+<p>La siguiente pantalla muestra los diferentes JCA Adapters disponibles en el servidor de dominio “SOA”. Aquellos JCA Adapters que cuenten con una configuración activa podrán ser seleccionados.</p>
+<p><img alt="12 adapters" src="../img/soa/12adapters.jpg" /></p>
+<h3 id="listar-entradas-soa"><strong>Listar entradas “SOA”</strong></h3>
+<p>La siguiente pantalla permite visualizar las entradas de configuración provenientes de un plug-in, estas entradas son identificados mediante iconos de color “azul”.</p>
+<p><em>Click File &gt; Entries</em></p>
+<p><img alt="13 menu entries" src="../img/soa/13menuentries.jpg" /></p>
+<h3 id="composite-properties"><strong>Composite properties</strong></h3>
+<p>La siguiente pantalla permite visualizar los diferentes servicios de SOA descargados desde el servidor de dominio “SOA”, los elementos más relevantes se enlistan a continuación:</p>
+<p><strong><em>Properties</em></strong>: Propiedades del servicio SOA.</p>
+<p><strong><em>Imports</em></strong>: Importación de recursos (XSD,WSDL).</p>
+<p><strong><em>References</em></strong>: Referencias a servicios externos.</p>
+<p><strong><em>Services</em></strong>: Referencias a servicios externos.</p>
+<p><strong><em>Components</em></strong>: Componentes que integran un servicio SOA.</p>
+<p><img alt="14 IMAGEN 14" src="../img/soa/14IMAGEN.jpg" /></p>
+<h3 id="opciones-sobre-entradas"><strong>Opciones sobre entradas</strong></h3>
+<hr />
+<p>Opciones generales</p>
+<p>Las siguientes opciones se encuentran descritas en la sección Configuración inicial &gt; <a href="../opciones/">Opciones sobre entradas</a>&gt; </p>
+<ul>
+<li>Acquiere control</li>
+<li>Release control</li>
+<li>View entry</li>
+<li>Duplicate entry</li>
+<li>Promote entry</li>
+<li>Delete entry</li>
+<li>View children</li>
+<li>View History</li>
+<li>Tree History</li>
+<li>Copy Selection</li>
+<li>Copy property</li>
+<li>Compare</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../plugin_weblogic/" title="Plugins" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Plugins
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../patches/" title="Patches" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Patches
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
